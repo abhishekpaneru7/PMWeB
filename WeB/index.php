@@ -53,40 +53,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <p class="img-txt">Specific Shop Display</p>
-      <div class="outer-grid">
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-        </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-
-        </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-        </div>
-        <div class="inner-grid">
-          <img src="img/pih.png"/>
-          </div>
-        </div>
-      </div>
-      <p class="img-txt">Highest Rated and Revied Products</p>
-      <div class="outer-grid">
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-        </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-
-        </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-        </div>
-        <div class="inner-grid">
-          <img src="img/pih.png"/>
-          </div>
-        </div>
-      </div>
+      
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
