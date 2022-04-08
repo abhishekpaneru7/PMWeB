@@ -29,6 +29,50 @@ body{
     width: 100%;
     padding: 10px;
  }
+
+ .forms{
+    width: 55%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+
+ .forms-label{
+    width: 20%;
+    padding: 1rem;
+    font-size: 1.1rem;
+ }
+ .forms-content{
+    text-align: center;
+ }
+
+ .forms-control{
+    width: 60%;
+    margin: 20px 0;
+    padding: 10px;
+ }
+
+.radio-list{
+   margin-right: 5%;
+   display: inline;
+}
+
+.radio{
+      margin: 0 20px;
+ }
+
+ input[type=submit]{
+   width: 15%;
+   padding: 10px;
+   color: #000;
+   margin: 20px 0;
+ }
+
+ .confPwd{
+    padding-top: 10px !important;
+
+ }
+
  @media screen and (max-width: 800px) {
     .inner-grid {
        flex: 50%;
