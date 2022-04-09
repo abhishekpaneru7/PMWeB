@@ -7,7 +7,7 @@ body, html {
  .text-center{
     text-align: center;
  }
- .checked {
+ .checked{
    color: orange;
  }
 .hero-image {
@@ -23,6 +23,14 @@ body, html {
     width: 100%;
     padding: 10px;
  }
+ .search-btn{
+   text-align: left;
+   position: absolute;
+   top: 20%;
+   left: 15%;
+   transform: translate(-50%, -50%);
+   color: white;
+}
 
  .forms{
     width: 55%;
@@ -68,14 +76,7 @@ body, html {
        flex: 50%;
        max-width: 50%;
  
-   .search-btn {
-      text-align: left;
-      position: absolute;
-      top: 20%;
-      left: 15%;
-      transform: translate(-50%, -50%);
-      color: white;
-   }
+
  /* @media screen and (max-width: 992px) {
     .hero-image{
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
