@@ -8,5 +8,6 @@
     <?php
     include "./include/header.php";
     include "./include/loginform.php";
+    include "./include/footer.php";
 ?>
 </body>
