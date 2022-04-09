@@ -1,87 +1,33 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.txt{
-   font-size: small;
-}
-.img-txt{
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-}
-
-.outer-grid {
-    display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
-   width: 90%;
-   margin: 0 auto;
+body, html {
+   height: 100%;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
  }
- .inner-grid {
-    display: block;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+.hero-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
+   height: 50%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
  }
- .inner-grid img {
-    margin-top: 8px;
-    width: 100%;
-    padding: 10px;
- }
-
- .forms{
-    width: 55%;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
- }
-
- .forms-label{
-    width: 20%;
-    padding: 1rem;
-    font-size: 1.1rem;
- }
- .forms-content{
-    text-align: center;
- }
-
- .forms-control{
-    width: 60%;
-    margin: 20px 0;
-    padding: 10px;
- }
-
-.radio-list{
-   margin-right: 5%;
-   display: inline;
-}
-
-.radio{
-      margin: 0 20px;
- }
-
- input[type=submit]{
-   width: 15%;
-   padding: 10px;
-   color: #000;
-   margin: 20px 0;
- }
-
- .confPwd{
-    padding-top: 10px !important;
-
- }
-
- @media screen and (max-width: 800px) {
-    .inner-grid {
-       flex: 50%;
-       max-width: 50%;
+ 
+   /* .search-btn {
+      text-align: left;
+      position: absolute;
+      top: 20%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      color: white;
+   } */
+ @media screen and (max-width: 992px) {
+    .hero-image{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
+      height: 20%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
     }
-    @media screen and (max-width: 600px) {
-        .inner-grid {
-           flex: 100%;
-           max-width: 100%;
-        }
-     }
+
  }
