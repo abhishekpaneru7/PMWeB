@@ -7,6 +7,7 @@
 <body>
     <?php
         include "./include/header.php";
-        include "./include/signupform.php";
+        include "./include/signuptraderform.php";
+        include "./include/footer.php";
     ?>
 </body>
