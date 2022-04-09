@@ -18,7 +18,6 @@ body, html {
    background-size: cover;
    position: relative;
  }
-<<<<<<< HEAD
  .inner-grid img {
     margin-top: 8px;
     width: 100%;
@@ -68,7 +67,6 @@ body, html {
     .inner-grid {
        flex: 50%;
        max-width: 50%;
-=======
  
    .search-btn {
       text-align: left;
@@ -86,7 +84,6 @@ body, html {
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
->>>>>>> ffa2306a571a8f76b951fde9c04520837bf36ba1
     }
 
  } */
