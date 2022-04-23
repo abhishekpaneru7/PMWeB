@@ -16,7 +16,7 @@ body, html {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   position: relative;
+   position: center;
  }
  .inner-grid img {
     margin-top: 8px;
@@ -24,10 +24,10 @@ body, html {
     padding: 10px;
  }
  .search-btn{
-   text-align: left;
+   text-align: center;
    position: absolute;
    top: 20%;
-   left: 15%;
+   left: 20%;
    transform: translate(-50%, -50%);
    color: white;
 }
@@ -75,16 +75,42 @@ body, html {
     .inner-grid {
        flex: 50%;
        max-width: 50%;
- 
+    }
+ } 
 
- /* @media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
     .hero-image{
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
-      height: 20%;
+      height: 40%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      position: relative;
-    }
-
- } */
+      position: center;
+   }
+   .search-btn{
+      text-align: center;
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: white;
+   }
+}
+@media screen and (max-width: 540px) {
+   .hero-image{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
+     height: 30%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: center;
+  }
+  .search-btn{
+     text-align: center;
+     position: absolute;
+     top: 20%;
+     left: 35%;
+     transform: translate(-50%, -50%);
+     color: white;
+  }
+}
