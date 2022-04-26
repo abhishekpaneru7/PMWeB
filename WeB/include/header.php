@@ -24,10 +24,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                <a class="nav-link" aria-current="page" href="#">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                <a class="nav-link" aria-current="page" href="#">About Us</a>
               </li>
               <button type="button" class="btn btn-primary mx-3"><i class="bi bi-cart2"></i></button>
               &nbsp;

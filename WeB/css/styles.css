@@ -7,6 +7,14 @@ body, html {
  .text-center{
     text-align: center;
  }
+
+/* Hover Effects */
+.gg {
+   color: white !important;
+}
+.gg:hover {
+   color: blue !important;
+}
  .checked{
    color: orange;
  }
@@ -114,5 +122,3 @@ body, html {
      color: white;
   }
 }
-
-/* Hover Effects */
