@@ -21,13 +21,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='white'">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Shop</a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About Us</a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white">About Us</a>
               </li>
               <button type="button" class="btn btn-primary mx-3"><i class="bi bi-cart2"></i></button>
               &nbsp;
