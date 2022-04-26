@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6351ce;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -29,9 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">About Us</a>
               </li>
-              <button type="button" class="btn btn-dark mx-3"><i class="bi bi-cart2"></i></button>
+              <button type="button" class="btn btn-primary mx-3"><i class="bi bi-cart2"></i></button>
               &nbsp;
-              <button type="button" class="btn btn-dark"><i class="bi bi-person"></i></button>
+              <button type="button" class="btn btn-primary"><i class="bi bi-person"></i></button>
             </ul>
           </div>
         </div>
