@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <?php include "include/header.php"; ?>
     <div class="hero-image">
         <div class="search-btn">
           <form class="d-flex">
@@ -145,5 +146,6 @@
     </div>
   </div>
 </div>
+<?php include "include/footer.php"; ?>
 </body>
 </html>
