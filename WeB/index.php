@@ -21,28 +21,28 @@
       <div class="col-12 mx-auto">
       <div class="row">
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <img class="card-img-top" src="img/cat1.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>

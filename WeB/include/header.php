@@ -12,8 +12,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #6351ce;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                CHF Local's Mart
+                <img src="img/logo_F.png" alt="logo" width="" height="50px" class="d-inline-block align-text-top">
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,17 +20,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php" style="color: white" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='white'">Home</a>
+                <a class="nav-link" aria-current="page" href="index.php" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#" style="color: white">Shop</a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#" style="color: white">About Us</a>
+                <a class="nav-link" aria-current="page" href="#" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
               </li>
-              <button type="button" class="btn btn-primary mx-3"><i class="bi bi-cart2"></i></button>
+              <button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-cart2"></i></button>
               &nbsp;
-              <button type="button" class="btn btn-primary"><i class="bi bi-person"></i></button>
+              <button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-person"></i></button>
             </ul>
           </div>
         </div>

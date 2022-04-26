@@ -3,6 +3,7 @@ body, html {
    height: 100%;
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
+   background-color: aqua;
  }
  .text-center{
     text-align: center;
@@ -12,8 +13,8 @@ body, html {
    color: orange;
  }
 .hero-image {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
-   height: 50%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bannerF.jpg");
+   height: 80%;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -27,7 +28,7 @@ body, html {
  .search-btn{
    text-align: center;
    position: absolute;
-   top: 20%;
+   top: 33%;
    left: 20%;
    transform: translate(-50%, -50%);
    color: white;
@@ -81,8 +82,8 @@ body, html {
 
 @media screen and (max-width: 990px) {
     .hero-image{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
-      height: 40%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bannerF.jpg");
+      height: 60%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -91,7 +92,7 @@ body, html {
    .search-btn{
       text-align: center;
       position: absolute;
-      top: 20%;
+      top: 27%;
       left: 30%;
       transform: translate(-50%, -50%);
       color: white;
@@ -99,8 +100,8 @@ body, html {
 }
 @media screen and (max-width: 540px) {
    .hero-image{
-     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pih.png");
-     height: 30%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bannerF.jpg");
+     height: 40%;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
