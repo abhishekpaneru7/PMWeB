@@ -1,61 +1,149 @@
 <!DOCTYPE html>
-<!-- GG -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHF Locals Mart</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <?php include "./include/header.php"?>
-      <p class="img-txt">Special Shop Discount Offer</p>
-      <div class="outer-grid">
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
+    <div class="hero-image">
+        <div class="search-btn">
+          <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button type="button search-btn" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+            </form>
         </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-
-        </div>
-        <div class="inner-grid">
-        <img src="img/pih.png"/>
-        </div>
-        <div class="inner-grid">
-          <img src="img/pih.png"/>
-          </div>
-        </div>
+    </div>
+    <div class="container">
+      <h1 class="text-center pb-4 mt-4">Special Category Discounts</h1>
+      <div class="col-12 mx-auto">
+      <div class="row">
+    <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/pih.png" class="d-block w-100" alt="1" height="550px">
-          </div>
-          <div class="carousel-item">
-            <img src="img/pih.png" class="d-block w-100" alt="2" height="550px">
-          </div>
-          <div class="carousel-item">
-            <img src="img/pih.png" class="d-block w-100" alt="3" height="550px">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    </div>
+    <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       </div>
+    </div>
+    <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      </div>
+    </div>
+    <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>  
+  </div>
+  <div class="container">
+    <h1 class="text-center pb-4 mt-4">Highest Rated Products</h1>
+    <div class="col-12 mx-auto">
+    <div class="row">
+  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+    <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      <a href="#" class="btn btn-primary text-center">View Product</a>
+    </div>
+  </div>
+  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+    <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      <a href="#" class="btn btn-primary text-center">View Product</a>
+    </div>
+  </div>
+  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+    <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
       
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      <a href="#" class="btn btn-primary text-center">View Product</a>
+    </div>
+  </div>
+  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+    <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
       
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <?php include "./include/footer.php"?>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+      <a href="#" class="btn btn-primary text-center">View Product</a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>  
+</div>
+<div class="container">
+  <h1 class="text-center pb-4 mt-4">How We Work?</h1>
+  <div class="col-10 mx-auto">
+  <div class="row text-center">
+    
+      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Place Order</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
+        </div>
+        <span>&#8594;</span>
+      </div>
+      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Make Payment</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dicta dolorum reprehenderit reiciendis impedit distinctio.</p>
+        </div>
+        <span>&#8594;</span>
+      </div>
+      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/pih.png " alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Collect Order</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet, ullam explicabo tenetur possimus illo.</p>
+        </div>
+        <span>&#8594;</span>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

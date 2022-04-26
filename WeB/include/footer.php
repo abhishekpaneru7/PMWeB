@@ -1,13 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-<!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
-</head>  
-    <!-- Footer -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+
     <footer
             class="text-center text-lg-start text-white"
             style="background-color: #1c2331"
@@ -32,7 +46,7 @@
             <i class="fab fa-twitter"></i>
           </a>
           <a href="" class="text-white me-4">
-            <i class="fas fa-at"></i>
+            <i class="fab fa-at"></i>
           </a>
           <a href="" class="text-white me-4">
             <i class="fab fa-instagram"></i>
@@ -41,7 +55,7 @@
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="" class="text-white me-4">
-            <i class="fab fa-youtube"></i>  
+            <i class="fab fa-youtube"></i>
           </a>
         </div>
         <!-- Right -->
@@ -56,38 +70,39 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold">Company name</h6>
+              <h6 class="text-uppercase fw-bold">ABOUT US</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
+                  <p>
+                    <a href="#!" class="text-white">About CHF</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Our History</a>
+                  </p>
             </div>
             <!-- Grid column -->
   
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Products</h6>
+              <h6 class="text-uppercase fw-bold">INFORMATION</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">MDBootstrap</a>
+                <a href="#!" class="text-white">FAQs</a>
               </p>
               <p>
-                <a href="#!" class="text-white">MDWordPress</a>
+                <a href="#!" class="text-white">Privacy Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-white">BrandFlow</a>
+                <a href="#!" class="text-white">Return Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Bootstrap Angular</a>
+                <a href="#!" class="text-white">Terms & Conditions</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -95,22 +110,16 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <h6 class="text-uppercase fw-bold">WORK WITH US</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">Your Account</a>
+                <a href="#!" class="text-white">Sell With Us</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Become an Affiliate</a>
-              </p>
-              <p>
-                <a href="#!" class="text-white">Shipping Rates</a>
-              </p>
-              <p>
-                <a href="#!" class="text-white">Help</a>
+                <a href="#!" class="text-white">Trader Benifits</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -118,15 +127,14 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <h6 class="text-uppercase fw-bold">CONTACT US</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p><i class="fas fa-home mr-3"></i> WY, WY test01, UK</p>
+              <p><i class="fas fa-envelope mr-3"></i> try@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
             </div>
             <!-- Grid column -->
           </div>
@@ -140,9 +148,9 @@
            class="text-center p-3"
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-           >MDBootstrap.com</a
+        © 2022 Copyright :
+        <a class="text-white" href="#!"
+           >CHF Local's Mart</a
           >
       </div>
       <!-- Copyright -->
@@ -150,10 +158,10 @@
     <!-- Footer -->
   
   </div>
-  <!-- End of .container -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- MDB -->
 <script
 type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
 ></script>
+</body>
+</html>
