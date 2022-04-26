@@ -4,7 +4,7 @@
 </head>
 <body>
     <form action="signupform.php" method="post" class="forms">
-        <fieldset class="border rounded-3 p-3">
+        <fieldset class="border rounded-3 p-3 mt-4">
             <legend class="float-none w-auto px-3"><h1>Trader Registration</h1></legend>
             <div class="forms-content">
                 <h2>Welcome to CHF Locals Mart</h2>
