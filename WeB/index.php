@@ -114,9 +114,9 @@
 </div>
 </div>  
 </div>
-<div class="container">
+<div class="container" >
   <h1 class="text-center pb-4 mt-4">How We Work?</h1>
-  <div class="col-10 mx-auto">
+  <div class="col-10 mx-auto" style="border: 3px solid red;">
   <div class="row text-center">
     
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
