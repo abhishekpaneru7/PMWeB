@@ -30,7 +30,7 @@
               </li>
               <button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-cart2"></i></button>
               &nbsp;
-              <button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-person"></i></button>
+              <a href="login.php"><button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-person"></i></button></a>
             </ul>
           </div>
         </div>
