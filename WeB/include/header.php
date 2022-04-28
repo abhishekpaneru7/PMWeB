@@ -26,7 +26,7 @@
                 <a class="nav-link" aria-current="page" href="#" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
+                <a class="nav-link" aria-current="page" href="aboutus.php" style="color: white" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
               </li>
               <button type="button" class="btn btn-dark" style="color: white"><i class="bi bi-cart2"></i></button>
               &nbsp;
