@@ -31,7 +31,9 @@
                 <input type="password" name="txtConfPassword" class="forms-control"><br>
                 <input type="checkbox" name="termsCond" <?php if(isset($_POST['termsCond'])){ echo 'checked'; } ?>> I accept terms and condition <br>
                 <input type="submit" value="Register" name="registerBtn"><br>
-                <a href="./signupcustomer.php" style="text-decoration: none;">Register As Customer</a>
+                <a href="./signupcustomer.php" style="text-decoration: none;">Register As Customer</a><br><br><br>
+                <p style="color:grey; display:inline;">Already Member? </p>
+                <a href="./login.php" style="text-decoration: none;">Login</a>
             </div>
         </fieldset>
     </form>

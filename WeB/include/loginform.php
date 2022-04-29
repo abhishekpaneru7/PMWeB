@@ -5,7 +5,7 @@
     <form action="login.php" method="post" class="forms">
     
         <fieldset class="border rounded-3 p-3 mt-5">
-        <div class="container" style="background-color: white; border:2px solid black;">
+        <!-- <div class="container" style="background-color: white; border:2px solid black;"> -->
             <legend class="float-none w-auto px-3"><h1>Login</h1></legend>
             <div class="forms-content">
                 <h2>Welcome to CHF Locals Mart</h2>
@@ -22,7 +22,7 @@
                 <a href="./signupcustomer.php" style="text-decoration:none;">Signup now</a><br><br>
             </div>
         </fieldset>
-        </div>
+        <!-- </div> -->
     </form>
     
 </body>
