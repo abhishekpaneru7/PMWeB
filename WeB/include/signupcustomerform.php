@@ -65,6 +65,8 @@
             //  mysqli_query($connection, $sql);
             $query = oci_parse($connection, $sql);
             oci_execute($query);
+            }else{
+                echo "<script>alert(\"please agree to terms & condition.\")</script>";
             }
            }else{
             echo "<script>alert(\"Password and confirm password must match.\")</script>";
