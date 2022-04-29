@@ -12,6 +12,7 @@
     <br>
     <br>
     <br>
+    <!-- this is about us page -->
     <div class="container" style="border: 5px solid grey; margin-top: 1%; height: auto">
     <h1 class="text-center pb-4" style="margin-top: 9%; text-decoration: underline;">Our History</h1>
         <div class="text">
