@@ -5,7 +5,6 @@
     <form action="login.php" method="post" class="forms">
     
         <fieldset class="border rounded-3 p-3 mt-5">
-        <!-- <div class="container" style="background-color: white; border:2px solid black;"> -->
             <legend class="float-none w-auto px-3"><h1>Login</h1></legend>
             <div class="forms-content">
                 <h2>Welcome to CHF Locals Mart</h2>
@@ -22,8 +21,24 @@
                 <a href="./signupcustomer.php" style="text-decoration:none;">Signup now</a><br><br>
             </div>
         </fieldset>
-        <!-- </div> -->
     </form>
-    
 </body>
 </html>
+<?php
+    include 'connection.php';
+    if(isset($_POST['loginBtn'])){
+        $email = $_POST['txtEmail'];
+        $password = $_POST['txtPassword'];
+        $user = $_POST['users'];
+        $sql = "Select * from $user where email = '$email' and password = '$password'";
+        $result = oci_parse($connection, $sql);
+        oci_execute($result);
+        if($row = oci_fetch_assoc($result)){
+            $_SESSION['user'] = "Select firstname from $user where email = '$email' and password = '$password'";
+            header('location: ./index.php');
+        }else{
+            $_SESSION['error'] = '<script>alert("User not recognized")</script>';
+            echo $_SESSION['error'];
+        }
+    }
+?>

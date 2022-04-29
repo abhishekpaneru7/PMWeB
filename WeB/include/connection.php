@@ -5,4 +5,5 @@ if (!$connection) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
+session_start();
 ?>
