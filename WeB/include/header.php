@@ -24,7 +24,7 @@
               </li>
               &nbsp;
               <li class="nav-item">
-                <a class="nav-link btn btn-dark" aria-current="page" href="#" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
+                <a class="nav-link btn btn-dark" aria-current="page" href="shop.php" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
               </li>
               &nbsp;
               <li class="nav-item">
