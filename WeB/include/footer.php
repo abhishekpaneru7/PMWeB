@@ -40,7 +40,7 @@
         <!-- Right -->
         <div>
           <a href="#" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
+            <i class="bi bi-facebook"></i>
           </a>
           <a href="#" class="text-white me-4">
             <i class="fab fa-twitter"></i>
@@ -54,9 +54,9 @@
           <a href="#" class="text-white me-4">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-youtube"></i>
-          </a>
+            <a href="#" class="text-white me-4">
+              <i class="fab fa-youtube"></i>
+            </a>
         </div>
         <!-- Right -->
       </section>
