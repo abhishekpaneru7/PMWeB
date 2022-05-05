@@ -39,22 +39,22 @@
   
         <!-- Right -->
         <div>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-at"></i>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="#" class="text-white me-4">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
