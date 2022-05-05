@@ -23,7 +23,7 @@
                 <h3>PRICE : $450</h3>
                 <h4>45 REMAINING IN STOCK</h4>
                 <div class="flex-items">
-                <a href="" class="btn btn-primary">Add to Card</a>
+                <a href="" class="btn btn-primary">Add to Card <i class="fas fa-shopping-cart"></i></a>
                 &nbsp;
                 <a href="" class="btn btn-danger">Buy Now</a>
                 </div>
