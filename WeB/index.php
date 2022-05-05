@@ -10,6 +10,7 @@
     <div class="hero-image">
         <div class="moto-text">
           <h1>WE ARE CHF.</h1>
+          <p>hello</p>
         </div>
         <div class="search-btn">
           <form class="d-flex">
@@ -118,7 +119,7 @@
 </div>  
 </div>
 <br>
-<div class="container" style="border: 3px solid red; background-color: white;">
+<div class="container-fluid" style="border: 3px solid red; background-color: white;">
   <h1 class="text-center pb-4 mt-4" >How We Work?</h1>
   <div class="col-10 mx-auto" >
   <div class="row text-center">
@@ -149,8 +150,7 @@
       </div>
     </div>
   </div>
-</div>
-<br>  
+</div> 
 <?php include "include/footer.php"; ?>
 </body>
 </html>
