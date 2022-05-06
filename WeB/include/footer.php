@@ -40,19 +40,19 @@
         <!-- Right -->
         <div>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-facebook"> facebook</i>
+            <i class="bi bi-facebook">Facebook</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-twitter"> twitter</i>
+            <i class="bi bi-twitter">Twitter</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-at"> email</i>
+            <i class="bi bi-at">Email</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-instagram"> instagram</i>
+            <i class="bi bi-instagram">Instagram</i>
           </a>
             <a href="#" class="text-white me-4">
-              <i class="bi bi-youtube"> youtube</i>
+              <i class="bi bi-youtube">Youtube</i>
             </a>
         </div>
         <!-- Right -->
@@ -72,11 +72,11 @@
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
-                  <p>
-                    <a href="#!" class="text-white">About CHF</a>
+                  <p> 
+                    <a href="aboutus.php #MOT" class="text-white">About CHF</a>
                   </p>
                   <p>
-                    <a href="#!" class="text-white">Our History</a>
+                    <a href="aboutus.php #OH" class="text-white">Our History</a>
                   </p>
             </div>
             <!-- Grid column -->
@@ -90,16 +90,16 @@
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">FAQs</a>
+                <a href="faqs.php" class="text-white">FAQs</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Privacy Policy</a>
+                <a href="tac.php #PP" class="text-white">Privacy Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Return Policy</a>
+                <a href="tac.php #RP" class="text-white">Return Policy</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Terms & Conditions</a>
+                <a href="tac.php #TC" class="text-white">Terms & Conditions</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -113,10 +113,10 @@
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
               <p>
-                <a href="#!" class="text-white">Sell With Us</a>
+                <a href="signuptrader.php" class="text-white">Sell With Us</a>
               </p>
               <p>
-                <a href="#!" class="text-white">Trader Benifits</a>
+                <a href="tac.php #TB" class="text-white">Trader Benifits</a>
               </p>
             </div>
             <!-- Grid column -->

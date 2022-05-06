@@ -1,12 +1,11 @@
 <head>
 </head>
 <body>
-
     <form action="signupcustomer.php" method="post" class="forms">
         <fieldset class="border rounded-3 p-3 mt-4">
             <legend class="float-none w-auto px-3"><h1>Customer Registration</h1></legend>
             <div class="forms-content">
-                <h2>Welcome to CHF Locals Mart</h2>
+                <h2>Welcome to CHF Local's Mart</h2>
                 <label for="fistName" class="forms-label">First Name</label>
                 <input type="text" name="txtFirstName" class="forms-control" value="<?php echo $_POST ['txtFirstName'] ?? ''; ?>"><br>
                 <label for="LastName" class="forms-label">Last Name</label>
@@ -25,7 +24,7 @@
                 <input type="password" name="txtPassword" class="forms-control">
                 <label for="ConfPassword" class="forms-label">Confirm Password</label>
                 <input type="password" name="txtConfPassword" class="forms-control"><br>
-                <input type="checkbox" name="termsCond" <?php if(isset($_POST['termsCond'])){ echo 'checked'; } ?>> I accept terms and condition <br>
+                <input type="checkbox" name="termsCond" <?php if(isset($_POST['termsCond'])){ echo 'checked'; } ?>> I accept <a href="tac.php">terms and condition</a> <br>
                 <input type="submit" value="Register" name="registerBtn"><br>
                 <a href="signuptrader.php" style="text-decoration: none;">Register As Trader</a><br><br><br>
                 <p style="color:grey; display:inline;">Already Member? </p>

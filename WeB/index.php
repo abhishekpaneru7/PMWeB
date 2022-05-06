@@ -30,7 +30,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-danger">Explore</a>
+        <a href="#" class="btn btn-primary">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -38,7 +38,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-danger">Explore</a>
+        <a href="#" class="btn btn-primary">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -46,7 +46,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-danger">Explore</a>
+        <a href="#" class="btn btn-primary">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -54,7 +54,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-danger">Explore</a>
+        <a href="#" class="btn btn-primary">Explore</a>
       </div>
     </div>
     </div>
@@ -124,9 +124,9 @@
 </div>  
 </div>
 <br>
-<div class="container-fluid" style="border: 3px solid red; background-color: white;">
+<div class="container-fluid">
   <h1 class="text-center pb-4 mt-4" >How We Work?</h1>
-  <div class="col-10 mx-auto" >
+  <div class="col-10 mx-auto" style="border: 2px solid black; background-color: white;">
   <div class="row text-center">
     
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
