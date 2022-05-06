@@ -7,6 +7,7 @@
 </head>
 <body>
   <?php include "include/header.php"; ?>
+  <br>
     <div class="hero-image">
         <div class="moto-text">
           <h1>WE ARE CHF.</h1>
@@ -14,8 +15,9 @@
         <div class="search-btn">
           <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="button search-btn" class="btn btn-primary">
+              <a href="search.php" type="button search-btn" class="btn btn-primary">
                 <i class="bi bi-search"></i>
+              </a>
             </form>
         </div>
     </div>
