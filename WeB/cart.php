@@ -39,12 +39,22 @@
                 </table>
             </div>
             <div class="cart-sum" style="border: 2px solid black;">
-                <div class="container" style="width: 18rem;">
+                <div class="container-fluid" style="width: 21rem;">
                     <h3 class="text-center mt-3">SUMMARY</h3>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Total (n - items) : 44</h5>
+                        <div class="">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Enter Discount Code" aria-label="Search">
+                                <button type="button search-btn" class="btn btn-primary">
+                                APPLY
+                            </form>
+                        </div>
+                        <br>
+                        <h6 class="card-title">Discount: </h6>
+                        <hr>
+                        <h6 class="cart-title">Grand Total: Rs.66</h6>
+                        <a href="#" class="btn btn-danger">Check OUT</a>
                     </div>
                 </div>
             </div>

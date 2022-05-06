@@ -363,7 +363,7 @@ input[type="submit"] {
   margin-right: 1%;
 }
 table{
-  width:60%;
+  width:100%;
   table-layout: fixed;
 }
 tr:nth-child(odd){
@@ -381,4 +381,43 @@ th, td{
   margin-top: 2%;
   margin-left: 1%;
   margin-right: 1%;
+}
+
+@media screen and (max-width: 740px) {
+  .cart-page{
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .flex-cart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .cart-table{
+    border: 2px solid red;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+  }
+  tr:nth-child(odd){
+    background-color: grey;
+  }
+  tr:nth-child(even){
+    background-color: blueviolet;
+  }
+  th, td{
+    padding: 10px 10px;
+    text-align: keft;
+    color: black;
+  }
+  .cart-sum{
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
 }
