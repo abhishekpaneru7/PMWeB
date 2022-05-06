@@ -8,7 +8,7 @@
 <body>
     <?php include "include/header.php" ?>
     <br>
-    <div class="hero-image">
+    <div class="tac-image">
         <div class="tac-text">
           <h1>Terms And Conditions</h1>
         </div>

@@ -73,7 +73,7 @@ p {
 
 .forms-control {
   width: 60%;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 10px;
 }
 
@@ -146,7 +146,7 @@ input[type="submit"] {
   .search-btn {
     text-align: center;
     position: absolute;
-    top: 28%;
+    top: 33%;
     left: 38.3%;
     transform: translate(-50%, -50%);
     color: white;
@@ -446,14 +446,69 @@ th, td{
   text-align: left;
 }
 
+.tac-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/faq-banner.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+}
 .tac-text{
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 25%;
+    left: 18%;
     color: white;
 }
 
 .tac-text h1{
   font-size: 90px;
+}
+
+@media screen and (max-width: 990px){
+  .tac-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/faq-banner.jpg");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+  }
+  .tac-text{
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 18%;
+      color: white;
+  }
+  
+  .tac-text h1{
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .tac-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/faq-banner.jpg");
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+  }
+  .tac-text{
+      text-align: center;
+      position: absolute;
+      top: 18%;
+      left: 15%;
+      color: white;
+  }
+  
+  .tac-text h1{
+    font-size: 50px;
+  }
 }
