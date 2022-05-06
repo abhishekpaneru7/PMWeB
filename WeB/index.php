@@ -10,7 +10,6 @@
     <div class="hero-image">
         <div class="moto-text">
           <h1>WE ARE CHF.</h1>
-          <p>hello</p>
         </div>
         <div class="search-btn">
           <form class="d-flex">
@@ -29,6 +28,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+        <a href="#" class="btn btn-danger">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -36,6 +36,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+        <a href="#" class="btn btn-danger">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -43,6 +44,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+        <a href="#" class="btn btn-danger">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -50,6 +52,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
+        <a href="#" class="btn btn-danger">Explore</a>
       </div>
     </div>
     </div>
