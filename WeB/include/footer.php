@@ -40,22 +40,19 @@
         <!-- Right -->
         <div>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-facebook"></i>
+            <i class="bi bi-facebook"> facebook</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
+            <i class="bi bi-twitter"> twitter</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="fab fa-at"></i>
+            <i class="bi bi-at"> email</i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="text-white me-4">
-            <i class="fab fa-linkedin"></i>
+            <i class="bi bi-instagram"> instagram</i>
           </a>
             <a href="#" class="text-white me-4">
-              <i class="fab fa-youtube"></i>
+              <i class="bi bi-youtube"> youtube</i>
             </a>
         </div>
         <!-- Right -->
