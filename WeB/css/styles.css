@@ -447,7 +447,7 @@ th, td{
 }
 .faq-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/bannerF.jpg");
+    url("../img/faq-banner.jpg");
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ th, td{
 @media screen and (max-width: 990px){
   .faq-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/bannerF.jpg");
+      url("../img/faq-banner.jpg");
     height: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -468,7 +468,7 @@ th, td{
 @media screen and (max-width: 540px) {
   .faq-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/bannerF.jpg");
+      url("../img/faq-banner.jpg");
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
@@ -479,7 +479,7 @@ th, td{
 
 .tac-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/faq-banner.jpg");
+    url("../img/toc-banner.jpg");
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -501,7 +501,7 @@ th, td{
 @media screen and (max-width: 990px){
   .tac-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/faq-banner.jpg");
+      url("../img/toc-banner.jpg");
     height: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,7 +524,7 @@ th, td{
 @media screen and (max-width: 540px){
   .tac-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/faq-banner.jpg");
+      url("../img/toc-banner.jpg");
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
