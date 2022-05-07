@@ -1,5 +1,4 @@
-<head>
-</head>
+
 <body>
     <form action="signuptrader.php" method="post" class="forms">
         <fieldset class="border rounded-3 p-3 mt-4">
