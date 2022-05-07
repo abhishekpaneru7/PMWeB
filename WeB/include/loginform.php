@@ -7,7 +7,7 @@
         <fieldset class="border rounded-3 p-3 mt-5">
             <legend class="float-none w-auto px-3"><h1>Login</h1></legend>
             <div class="forms-content">
-                <h2>Welcome to CHF Locals Mart</h2>
+                <h2>Welcome to CHF Local's Mart</h2>
                 <input type="email" name="txtEmail" class="forms-control" placeholder="Email">
                 <input type="password" name="txtPassword" class="forms-control" placeholder="Password">
                 <select name="users" class="forms-control">

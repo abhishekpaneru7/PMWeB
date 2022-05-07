@@ -31,7 +31,7 @@
                 <a class="nav-link btn btn-dark" aria-current="page" href="aboutus.php" style="color: white; margin-right: %;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
               </li>
               &nbsp;
-              <a href="" class="btn btn-dark text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
+              <a href="cart.php" class="btn btn-dark text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
               &nbsp;
               <a href="login.php" class="btn btn-dark text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
             </ul>

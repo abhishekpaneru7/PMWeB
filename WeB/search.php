@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <?php
-        include "include/header.php";
-    ?>
+    <?php include "include/header.php"; ?>
     <br>
-    <br>
-    <br>
-    <br>
-    <div class="shop-container">
-      <div class="shop-flex">
-        <div class="sort-shop">
+    <div class="hero-image">
+        <div class="moto-text">
+          <h1>SEARCH ITEMS FOR: </h1>
+        </div>
+        <div class="search-btn">
+          <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="search.php" type="button search-btn" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+              </a>
+            </form>
+        </div>
+    </div>
+    <div class="search-bar">
+      <div class="flex-search">
+        <div class="side-cat-search">
           <h3>SORT BY:</h3>
           <hr>
           <h5 class="text-center">ALPHABET</h5>
@@ -34,7 +42,7 @@
             <input type="number" placeholder="Max-Price" style="width: 120px;">
           </div>
         </div>
-        <div class="shop-products">
+        <div class="main-cat-item">
         <div class="container-fluid">
   <h1 class="text-center pb-4 mt-4" >PRODUCTS</h1>
   <div class="col-10 mx-auto">
@@ -70,8 +78,6 @@
         </div>
       </div>
     </div>
-    <?php
-        include "include/footer.php";
-    ?>
+    <?php include "include/footer.php"; ?>
 </body>
 </html>

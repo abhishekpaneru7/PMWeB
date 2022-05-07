@@ -15,18 +15,19 @@
         <h1 class="text-center">PRODUCT</h1>
         <div class="flex-items">
             <div class="product-img">
-                <img src="img/pih.png" alt="" width="360px" height="480px">
+                <img src="img/pih.png" alt="" class="size">
             </div>
             <div class="product-details">
                 <h5>PRODUCT DETAILS:</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo minima deleniti, fugiat praesentium tenetur voluptatem error provident sequi. Eaque, nostrum et! Neque, ullam vel. Id, earum. Similique eum sunt maiores aperiam unde mollitia, possimus, quasi sed voluptatibus, delectus a. Qui eveniet eligendi voluptas debitis nostrum similique expedita rerum, maiores saepe molestias quam sapiente iusto tempore magnam soluta sit obcaecati. Nulla dolorem dignissimos perferendis fugit quis assumenda eveniet debitis harum provident cumque praesentium deleniti illum, nisi porro distinctio quaerat ut explicabo natus numquam et alias quisquam libero? Harum, dolor reprehenderit esse officia libero eaque necessitatibus recusandae, dicta aliquid repudiandae quaerat molestias?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptate quisquam voluptatem quia numquam optio ab sapiente, deserunt culpa itaque doloribus, doloremque blanditiis ut iure fuga! Odio est consectetur sed fugiat. Sit nostrum dolorum iste, cupiditate enim possimus quaerat quas neque aliquam perspiciatis sunt fugit magnam, blanditiis asperiores delectus dignissimos!</p>
                 <h3>PRICE : $450</h3>
                 <h4>45 REMAINING IN STOCK</h4>
                 <div class="flex-items">
-                <a href="" class="btn btn-primary">Add to Card</a>
+                <a href="" class="btn btn-primary">Add to Card <i class="fas fa-shopping-cart"></i></a>
                 &nbsp;
                 <a href="" class="btn btn-danger">Buy Now</a>
                 </div>
+                <br>
             </div>
         </div>
     </div>
