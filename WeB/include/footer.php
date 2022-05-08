@@ -40,19 +40,19 @@
         <!-- Right -->
         <div>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-facebook">Facebook</i>
+            <i class="bi bi-facebook"></i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-twitter">Twitter</i>
+            <i class="bi bi-twitter"></i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-at">Email</i>
+            <i class="bi bi-at"></i>
           </a>
           <a href="#" class="text-white me-4">
-            <i class="bi bi-instagram">Instagram</i>
+            <i class="bi bi-instagram"></i>
           </a>
             <a href="#" class="text-white me-4">
-              <i class="bi bi-youtube">Youtube</i>
+              <i class="bi bi-youtube"></i>
             </a>
         </div>
         <!-- Right -->

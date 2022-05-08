@@ -8,11 +8,7 @@
 <body>
     <?php
         include "include/header.php";
-    ?>
-    <br>
-    <br>
-    <br>
-    <br>
+    ?><br><br><br><br>
     <div class="shop-container">
       <div class="shop-flex">
         <div class="sort-shop">

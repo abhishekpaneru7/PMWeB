@@ -1,3 +1,4 @@
+<?php  include 'connection.php'; ?>
 <head>
 </head>
 <body>
@@ -34,7 +35,6 @@
     </form>
 </body>
 <?php
- include 'connection.php';
  $firstname = "";
  $lastname = "";
  $email = "";

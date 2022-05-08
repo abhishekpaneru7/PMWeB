@@ -1,4 +1,4 @@
-
+<?php include 'connection.php'; ?>
 <body>
     <form action="signuptrader.php" method="post" class="forms">
         <fieldset class="border rounded-3 p-3 mt-4">
@@ -36,7 +36,6 @@
     </form>
 </body>
 <?php
-    include 'connection.php';
     $firstname = "";
     $lastname = "";
     $email = "";

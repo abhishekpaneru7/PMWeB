@@ -1,3 +1,4 @@
+<?php include 'connection.php'; ?>
 <head>
 </head>
 <body>
@@ -25,7 +26,6 @@
 </body>
 </html>
 <?php
-    include 'connection.php';
     if(isset($_POST['loginBtn'])){
         $email = $_POST['txtEmail'];
         $password = $_POST['txtPassword'];
