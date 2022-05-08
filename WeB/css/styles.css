@@ -644,7 +644,7 @@ th, td{
 .td-con{
   box-shadow: 6px 12px 18px 0 black;
 }
-.card-body{
+.card-body-con{
   display: flex;
   flex-direction: column;
 }
