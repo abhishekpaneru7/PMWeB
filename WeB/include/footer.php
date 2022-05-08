@@ -132,6 +132,9 @@
               <p><i class="fas fa-home mr-3"></i> WY, WY test01, UK</p>
               <p><i class="fas fa-envelope mr-3"></i> try@example.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
+              <p>
+                <a href="contactus.php" class="btn btn-primary">Contact US</a>
+              </p>
             </div>
             <!-- Grid column -->
           </div>
