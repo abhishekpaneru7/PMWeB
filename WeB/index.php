@@ -11,7 +11,7 @@
     <div class="hero-image">
         <div class="moto-text">
           <h1>We Are CHF Local's Mart.</h1>
-          <h5>Quality, Organic, Natural products directly from the farmer's hands to your doorsteps.</h5>
+          <p>Quality, Organic, Natural products directly from the farmer's hands to your doorsteps.</p>
         </div>
         <div class="search-btn">
           <form class="d-flex">
