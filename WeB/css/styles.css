@@ -473,13 +473,13 @@ th, td{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: center;
-  }
+    position: center
+;  }
 }
 
 .tac-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/toc-banner.jpg");
+    url("../img/tac-banner.jpg");
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -501,7 +501,7 @@ th, td{
 @media screen and (max-width: 990px){
   .tac-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/toc-banner.jpg");
+      url("../img/tac-banner.jpg");
     height: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,7 +524,7 @@ th, td{
 @media screen and (max-width: 540px){
   .tac-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/toc-banner.jpg");
+      url("../img/tac-banner.jpg");
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;

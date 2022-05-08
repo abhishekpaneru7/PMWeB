@@ -10,7 +10,8 @@
   <br>
     <div class="hero-image">
         <div class="moto-text">
-          <h1>WE ARE CHF.</h1>
+          <h1>We Are CHF Local's Mart.</h1>
+          <h5>Quality, Organic, Natural products directly from the farmer's hands to your doorsteps.</h5>
         </div>
         <div class="search-btn">
           <form class="d-flex">
@@ -125,31 +126,31 @@
 </div>
 <br>
 <div class="container-fluid">
-  <h1 class="text-center pb-4 mt-4" >How We Work?</h1>
-  <div class="col-10 mx-auto" style="border: 2px solid black; background-color: white;">
+  <h1 class="text-center pb-6 mt-5" >How We Work?</h1>
+  <div class="col-8 mx-auto" style="border: 1.5px solid black; background-color: white;">
   <div class="row text-center">
     
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+        <img class="card-img-top" src="img/icon-bag.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Place Order</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
+          <p class="card-text">Any product you choose is sent to your cart through which your orders will can placed.</p>
         </div>
         <span>&#8594;</span>
       </div>
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+        <img class="card-img-top" src="img/icon-pay.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Make Payment</h5>
-          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dicta dolorum reprehenderit reiciendis impedit distinctio.</p>
+          <p class="card-text">Your orders are recieved after the payment is confirmed. Then you will recieve the details of your order and the delivery.</p>
         </div>
         <span>&#8594;</span>
       </div>
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="img/pih.png " alt="Card image cap">
+        <img class="card-img-top" src="img/icon-box.png " alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Collect Order</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet, ullam explicabo tenetur possimus illo.</p>
+          <p class="card-text">Your order will be placed according to the details that you recieved after confirmation of the order placement.</p>
         </div>
         <span>&#8594;</span>
       </div>
