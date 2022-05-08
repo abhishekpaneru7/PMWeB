@@ -17,7 +17,7 @@
         <input type="email" placeholder="Your Email Here" size="30">
         <label for="message">Message: </label>
         <textarea name="message" cols="50" rows="5"></textarea>
-        <input type="submit">
+        <input type="submit" class="btn btn-primary text-white">
     </div>
     <?php include "include/footer.php"; ?>
 </body>
