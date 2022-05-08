@@ -12,11 +12,11 @@
     <br>
     <div class="contact-con">
         <label for="name">Name: </label>
-        <input type="text" placeholder="Your Name Here">
+        <input type="text" placeholder="Your Name Here" size="25">
         <label for="email">Email: </label>
-        <input type="email" placeholder="Your Email Here">
+        <input type="email" placeholder="Your Email Here" size="30">
         <label for="message">Message: </label>
-        <input type="text" placeholder="Your Message Here">
+        <textarea name="message" cols="50" rows="5"></textarea>
         <input type="submit">
     </div>
     <?php include "include/footer.php"; ?>

@@ -126,7 +126,7 @@
 </div>
 <br>
 <div class="container-fluid">
-  <h1 class="text-center pb-6 mt-5" >How We Work?</h1>
+  <h1 class="text-center pb-6 mt-5 text-u" >How We Work?</h1>
   <div class="col-8 mx-auto" style="border: 1.5px solid black; background-color: white;">
   <div class="row text-center">
     

@@ -24,6 +24,9 @@ p {
 .text-center {
   text-align: center;
 }
+.text-u{
+  text-decoration: underline;
+}
 
 .checked {
   color: orange;
@@ -640,3 +643,13 @@ th, td{
 }
 
 /* Contact US */
+.contact-con{
+  border: 2px solid red;
+  margin: 1% 1% 1% 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-con input{
+  text-align: center;
+}
