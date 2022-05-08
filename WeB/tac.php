@@ -15,7 +15,7 @@
     </div>
     <div class="faq-con">
         <div class="faq-qa">
-            <h5 id="TC" >Terms & Conditions</h5>
+            <h5 id="TC"; class="text-u" >Terms & Conditions</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -24,7 +24,7 @@
             </p>
         </div>
         <div class="faq-qa">
-            <h5 id="PP">Privacy Policy</h5>
+            <h5 id="PP"; class="text-u">Privacy Policy</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -33,7 +33,7 @@
             </p>
         </div>
         <div class="faq-qa">
-            <h5 id="RP">Return Policy</h5>
+            <h5 id="RP"; class="text-u">Return Policy</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -42,7 +42,7 @@
             </p>
         </div>
         <div class="faq-qa">
-            <h5 id="TB">Trader Benifits</h5>
+            <h5 id="TB"; class="text-u">Trader Benifits</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
