@@ -23,6 +23,7 @@ p {
 }
 .text-u{
   text-decoration: underline;
+  text-decoration-thickness: 0.15rem ;
 }
 
 .checked {
@@ -496,7 +497,7 @@ th, td{
     text-align: center;
     position: absolute;
     top: 40%;
-    left: 18%;
+    left: 26%;
     color: white;
 }
 
@@ -518,7 +519,7 @@ th, td{
       text-align: center;
       position: absolute;
       top: 30%;
-      left: 18%;
+      left: 15%;
       color: white;
   }
   
@@ -541,7 +542,7 @@ th, td{
       text-align: center;
       position: absolute;
       top: 18%;
-      left: 15%;
+      left: 2%;
       color: white;
   }
   
