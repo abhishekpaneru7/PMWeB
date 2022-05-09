@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <div class="cont-bg">
     <?php include "include/header.php"; ?>
     <br>
     <br>
@@ -27,7 +28,7 @@
         <input type="email" placeholder="Your Email Here" class="text-center">
         </div>
         <label for="message">Message: </label>
-        <textarea name="message" cols="20" rows="5"></textarea>
+        <textarea name="message" style="resize: none;"cols="20" rows="5"></textarea>
         <input type="submit" class="btn btn-primary text-white" style="width: 100px;">
         </div>
       </div>
@@ -36,5 +37,6 @@
 </div>
 <br>
     <?php include "include/footer.php"; ?>
+</div>
 </body>
 </html>
