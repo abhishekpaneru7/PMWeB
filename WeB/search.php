@@ -24,16 +24,26 @@
     <div class="search-bar">
       <div class="flex-search">
         <div class="side-cat-search">
-          <h3>SORT BY:</h3>
-          <hr>
-          <h5 class="text-center">ALPHABET</h5>
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="radio" name="alphabet" value="AESC">
-          <label for="AESC"> AESC </label>
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="radio" name="alphabet" value="DESC">
-          <label for="AESC"> DESC </label>
+        <h3>SORT BY:</h3>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 120px; background-color: #7c4dff; height: 2px">
+          <div class="text-center">
+          <h5 class="text-center">CATEGORY</h5>
+          <input type="radio" name="category" value="fish">
+          <label for="fish"> Fish </label>
           <br>
+          <input type="radio" name="category" value="cake">
+          <label for="cake"> Cake </label>
+          </div>
+          <br>
+          <div class="text-center">
+          <h5 class="text-center">TRADER</h5>
+          <input type="radio" name="trader" value="fishmonger">
+          <label for="AESC"> FishMonger </label>
+          <br>
+          <input type="radio" name="trader" value="baker">
+          <label for="baker"> Baker </label>
+          </div>
           <br>
           <h5 class="text-center">PRICE</h5>
           <div class="flex-search">
