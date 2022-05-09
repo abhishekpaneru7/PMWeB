@@ -659,7 +659,7 @@ th, td{
 
 /* Contact US */
 .td-con{
-  box-shadow: 6px 12px 18px 0 black;
+  box-shadow: 3px 6px 9px 12px aqua;
 }
 .card-body-con{
   display: flex;

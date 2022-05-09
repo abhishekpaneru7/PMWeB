@@ -16,12 +16,17 @@
   <div class="row text-center">
       <div class="col-lg-4 py-2 m-2 mx-auto td-con" style="width: 28rem;">
         <div class="card-body card-body-con">
-          <h5 class="card-title">Please fill the form below!</h5>
-          <div class="name-f">
+          <h5 class="card-title">Contact Us!</h5>
+          <br>
+          <div class="name-f pb-3">
         <label for="name">Name: </label>
         <input type="text" placeholder="Your Name Here" class="text-center">
         </div>
-        <div class="email-f mt-2 pb-2">
+        <div class="name-f">
+        <label for="name">Subject: </label>
+        <input type="text" placeholder="Your Purpose Here" class="text-center">
+        </div>
+        <div class="email-f mt-3 pb-2">
         <label for="email">Email: </label>
         <input type="email" placeholder="Your Email Here" class="text-center">
         </div>
