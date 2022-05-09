@@ -22,11 +22,7 @@
         <label for="name">Name: </label>
         <input type="text" placeholder="Your Name Here" class="text-center">
         </div>
-        <div class="name-f">
-        <label for="name">Subject: </label>
-        <input type="text" placeholder="Your Purpose Here" class="text-center">
-        </div>
-        <div class="email-f mt-3 pb-2">
+        <div class="email-f mt-1 pb-2">
         <label for="email">Email: </label>
         <input type="email" placeholder="Your Email Here" class="text-center">
         </div>

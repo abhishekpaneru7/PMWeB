@@ -20,20 +20,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link btn btn-dark" aria-current="page" href="index.php" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Home</a>
+                <a class="nav-link btn btn-dark btn-nav" aria-current="page" href="index.php" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Home</a>
               </li>
               &nbsp;
               <li class="nav-item">
-                <a class="nav-link btn btn-dark" aria-current="page" href="shop.php" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
+                <a class="nav-link btn btn-dark btn-nav" aria-current="page" href="shop.php" style="color: white;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Shop</a>
               </li>
               &nbsp;
               <li class="nav-item">
-                <a class="nav-link btn btn-dark" aria-current="page" href="aboutus.php" style="color: white; margin-right: %;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
+                <a class="nav-link btn btn-dark btn-nav" aria-current="page" href="aboutus.php" style="color: white; margin-right: %;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
               </li>
               &nbsp;
-              <a href="cart.php" class="btn btn-dark text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
+              <a href="cart.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
               &nbsp;
-              <a href="login.php" class="btn btn-dark text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
+              <a href="login.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
             </ul>
           </div>
         </div>

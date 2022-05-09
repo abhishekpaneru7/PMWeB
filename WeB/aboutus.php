@@ -28,7 +28,7 @@
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary text-center">Contact Us</a>
+        <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -37,7 +37,7 @@
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary text-center">Contact Us</a>
+        <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -46,7 +46,7 @@
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary text-center">Contact Us</a>
+        <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -55,7 +55,7 @@
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary text-center">Contact Us</a>
+        <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -64,7 +64,7 @@
       <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary text-center">Contact Us</a>
+        <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     </div>

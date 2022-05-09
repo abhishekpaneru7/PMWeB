@@ -22,6 +22,7 @@
             </form>
         </div>
     </div>
+<div class="back-con">
     <div class="container">
       <h1 class="text-center pb-4 mt-4">Special Category Discounts</h1>
       <div class="col-12 mx-auto">
@@ -31,7 +32,7 @@
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary">Explore</a>
+        <a href="shop.php" class="btn btn-primary btn-card">Explore</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -59,11 +60,10 @@
       </div>
     </div>
     </div>
-  </div>
 </div>  
   </div>
   <div class="container">
-    <h1 class="text-center pb-4 mt-4">Highest Rated Products</h1>
+    <h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>
     <div class="col-12 mx-auto">
     <div class="row">
   <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -76,7 +76,7 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
       <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-      <a href="#" class="btn btn-primary text-center">View Product</a>
+      <a href="#" class="btn btn-primary text-center btn-card">Details</a>
     </div>
   </div>
   <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -124,9 +124,10 @@
 </div>
 </div>  
 </div>
+</div>
 <br>
 <div class="container-fluid">
-  <h1 class="text-center pb-6 mt-5 text-u" >How We Work?</h1>
+  <h1 class="text-center pb-6 mt-2 text-u" >How We Work?</h1>
   <div class="col-8 mx-auto" style="border: 1.5px solid black; background-color: white;">
   <div class="row text-center">
     

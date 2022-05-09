@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -39,19 +40,19 @@
   
         <!-- Right -->
         <div>
-          <a href="#" class="text-white me-4">
+          <a href="#" class="text-white me-4 fix-foot">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="#" class="text-white me-4">
+          <a href="#" class="text-white me-4 fix-foot">
             <i class="bi bi-twitter"></i>
           </a>
-          <a href="#" class="text-white me-4">
-            <i class="bi bi-at"></i>
+          <a href="#" class="text-white me-4 fix-foot">
+          <i class="fas fa-envelope"></i>
           </a>
-          <a href="#" class="text-white me-4">
+          <a href="#" class="text-white me-4 fix-foot">
             <i class="bi bi-instagram"></i>
           </a>
-            <a href="#" class="text-white me-4">
+            <a href="#" class="text-white me-4 fix-foot">
               <i class="bi bi-youtube"></i>
             </a>
         </div>
@@ -133,7 +134,7 @@
               <p><i class="fas fa-envelope mr-3"></i> try@example.com</p>
               <p><i class="fas fa-phone mr-3"></i> + 01 234 567 89</p>
               <p>
-                <a href="contactus.php" class="btn btn-primary">Contact US</a>
+                <a href="contactus.php" class="btn btn-primary">Contact Us</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -149,7 +150,7 @@
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
         © 2022 Copyright :
-        <a class="text-white" href="#!"
+        <a class="text-white fix-foot" href="#!"
            >CHF Local's Mart</a
           >
       </div>

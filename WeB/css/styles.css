@@ -12,16 +12,43 @@ p {
   margin: 3px;
   text-align: justify;
 }
-.btn {
+.back-con{
+  padding-bottom: 5%;
+  background-color: #000;
+}
+.btn-nav {
   color: #fff;
   text-decoration: none; 
   display: inline-block;
   padding: 15px 20px;
   position: relative;
 }
-.btn:after {    
+.btn-nav:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #E09C78;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.btn-nav:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.btn-card {
+  color: #fff;
+  text-decoration: none; 
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.btn-card:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 10%;
   content: "";
   display: block;
   height: 2px;
@@ -31,9 +58,9 @@ p {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.btn:hover:after { 
+.btn-card:hover:after { 
   width: 100%; 
-  left: 0; 
+  left: 5%;
 }
 .text-center {
   text-align: center;
@@ -41,6 +68,9 @@ p {
 .text-u{
   text-decoration: underline;
   text-decoration-thickness: 0.15rem ;
+}
+.fix-foot{
+  text-decoration: none;
 }
 
 .checked {
@@ -659,7 +689,7 @@ th, td{
 
 /* Contact US */
 .td-con{
-  box-shadow: 3px 6px 9px 12px aqua;
+  box-shadow: 1px 2px 3px 4px black;
 }
 .card-body-con{
   display: flex;
