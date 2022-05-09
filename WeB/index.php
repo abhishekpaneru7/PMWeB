@@ -75,7 +75,7 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
       <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-      <a href="#" class="btn btn-primary text-center btn-card">Details</a>
+      <a href="productdetail.php" class="btn btn-primary text-center btn-card">Details</a>
     </div>
   </div>
   <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">

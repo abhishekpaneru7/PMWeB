@@ -13,7 +13,16 @@
       <div class="shop-flex">
         <div class="sort-shop">
           <h3>SORT BY:</h3>
-          <hr>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 120px; background-color: #7c4dff; height: 2px">
+          <h5 class="text-center">NAME</h5>
+          <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="search.php" type="button search-btn" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+              </a>
+            </form>
+          <br>
           <h5 class="text-center">ALPHABET</h5>
           &nbsp; &nbsp; &nbsp; &nbsp;
           <input type="radio" name="alphabet" value="AESC">
@@ -22,6 +31,24 @@
           <input type="radio" name="alphabet" value="DESC">
           <label for="AESC"> DESC </label>
           <br>
+          <br>
+          <div class="text-center">
+          <h5 class="text-center">CATEGORY</h5>
+          <input type="radio" name="category" value="fish">
+          <label for="fish"> Fish </label>
+          <br>
+          <input type="radio" name="category" value="cake">
+          <label for="cake"> Cake </label>
+          </div>
+          <br>
+          <div class="text-center">
+          <h5 class="text-center">TRADER</h5>
+          <input type="radio" name="trader" value="fishmonger">
+          <label for="AESC"> FishMonger </label>
+          <br>
+          <input type="radio" name="trader" value="baker">
+          <label for="baker"> Baker </label>
+          </div>
           <br>
           <h5 class="text-center">PRICE</h5>
           <div class="flex-search">
@@ -39,8 +66,17 @@
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
         <img class="card-img-top" src="img/pih.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Place Order</h5>
+          <h5 class="card-title">Rs: 100</h5>
+          <h5 class="card-title">Food</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
+          <a href="productdetail.php" class="btn btn-primary btn-card">View Product</a>
+        </div>
+      </div>
+      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="img/pih.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Make Payment</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dicta dolorum reprehenderit reiciendis impedit distinctio.</p>
         </div>
         <span>&#8594;</span>
       </div>

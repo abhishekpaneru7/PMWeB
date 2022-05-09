@@ -218,9 +218,10 @@ input[type="submit"] {
 }
 
 .product-detail{
-  border: 5px solid black;
+  border: 2px solid red;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 40px;
 }
 .flex-items{
   display: flex;
@@ -655,7 +656,7 @@ th, td{
   border: 2px solid red;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
-  background-color: aquamarine;
+  background-color: #6351ce;
 }
 .shop-products{
   width: 75%;
@@ -689,7 +690,7 @@ th, td{
 
 /* Contact US */
 .td-con{
-  box-shadow: 1px 2px 3px 4px black;
+  box-shadow: 0 4px 24px 0 black;
 }
 .card-body-con{
   display: flex;

@@ -21,7 +21,12 @@
                 <h5>PRODUCT DETAILS:</h5>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptate quisquam voluptatem quia numquam optio ab sapiente, deserunt culpa itaque doloribus, doloremque blanditiis ut iure fuga! Odio est consectetur sed fugiat. Sit nostrum dolorum iste, cupiditate enim possimus quaerat quas neque aliquam perspiciatis sunt fugit magnam, blanditiis asperiores delectus dignissimos!</p>
                 <h3>PRICE : $450</h3>
-                <h4>45 REMAINING IN STOCK</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <h4>45 <br> REMAINING IN STOCK</h4>
                 <div class="flex-items">
                 <a href="" class="btn btn-primary">Add to Card <i class="fas fa-shopping-cart"></i></a>
                 &nbsp;
