@@ -13,8 +13,8 @@ p {
   text-align: justify;
 }
 .back-con{
-  padding-bottom: 5%;
-  background-color: #000;
+  padding-bottom: 2%;
+  background-image: url("../img/bg2.jpg");
 }
 .btn-nav {
   color: #fff;

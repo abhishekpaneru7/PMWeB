@@ -22,7 +22,6 @@
             </form>
         </div>
     </div>
-<div class="back-con">
     <div class="container">
       <h1 class="text-center pb-4 mt-4">Special Category Discounts</h1>
       <div class="col-12 mx-auto">
@@ -124,11 +123,11 @@
 </div>
 </div>  
 </div>
-</div>
 <br>
+<div class="back-con">
 <div class="container-fluid">
   <h1 class="text-center pb-6 mt-2 text-u" >How We Work?</h1>
-  <div class="col-8 mx-auto" style="border: 1.5px solid black; background-color: white;">
+  <div class="col-7 mx-auto pb-2 mt-2" style="background-color: white;">
   <div class="row text-center">
     
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -157,7 +156,8 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
+</div>
 <br>
 <?php include "include/footer.php"; ?>
 </body>
