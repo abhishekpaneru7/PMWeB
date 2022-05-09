@@ -27,22 +27,36 @@
                         <td>55</td>
                         <td>2</td>
                         <td>110</td>
-                        <td><a href="" class="link link-primary">DELETE</a></td>
+                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
                     </tr>
                     <tr>
                         <td>Food</td>
                         <td>55</td>
                         <td>2</td>
                         <td>110</td>
-                        <td><a href="" class="link link-primary">DELETE</a></td>
+                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>55</td>
+                        <td>2</td>
+                        <td>110</td>
+                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>55</td>
+                        <td>2</td>
+                        <td>110</td>
+                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 </table>
             </div>
-            <div class="cart-sum" style="border: 2px solid black;">
+            <div class="cart-sum" style="border: 2px solid black; background-color: lightcyan;">
                 <div class="container-fluid" style="width: 21rem;">
                     <h3 class="text-center mt-3">SUMMARY</h3>
                     <div class="card-body">
-                        <h5 class="card-title">Total (n - items) : 44</h5>
+                        <h5 class="card-title text-center">Total (n - items) : 44</h5>
                         <div class="">
                             <form class="d-flex">
                                 <input class="form-control me-2" type="search" placeholder="Enter Discount Code" aria-label="Search">
@@ -51,14 +65,17 @@
                             </form>
                         </div>
                         <br>
-                        <h6 class="card-title">Discount: </h6>
+                        <h6 class="card-title text-center">Discount: </h6>
                         <hr>
-                        <h6 class="cart-title">Grand Total: Rs.66</h6>
-                        <a href="#" class="btn btn-danger">Check OUT</a>
+                        <h6 class="cart-title text-center">Grand Total: Rs.66</h6>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-danger btn-card">Check OUT</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
     </div>
     <?php include "include/footer.php"; ?>
 </body>

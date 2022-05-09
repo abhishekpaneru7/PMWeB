@@ -441,7 +441,6 @@ input[type="submit"] {
   display: flex;
 }
 .cart-table{
-  border: 2px solid red;
   margin-top: 2%;
   margin-left: 1%;
   margin-right: 1%;
@@ -451,14 +450,18 @@ table{
   table-layout: fixed;
 }
 tr:nth-child(odd){
-  background-color: grey;
+  background-color: lightskyblue;
 }
 tr:nth-child(even){
-  background-color: blueviolet;
+  background-color: lightgoldenrodyellow;
+}
+th{
+  background-color: lightgreen !important;
+  color: white !important;
 }
 th, td{
   padding: 10px 10px;
-  text-align: keft;
+  text-align: left;
   color: black;
 }
 .cart-sum{
@@ -633,7 +636,7 @@ th, td{
   border: 2px solid red;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
-  background-color: aquamarine;
+  background-color: #6351ce;
 }
 .main-cat-item{
   width: 75%;
