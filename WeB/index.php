@@ -127,7 +127,7 @@
 <div class="back-con">
 <div class="container-fluid">
   <h1 class="text-center pb-6 mt-2 text-u" >How We Work?</h1>
-  <div class="col-7 mx-auto pb-2 mt-2" style="background-color: white;">
+  <div class="col-8 mx-auto pb-2 mt-2">
   <div class="row text-center">
     
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
@@ -155,7 +155,7 @@
         <span>&#8594;</span>
       </div>
     </div>
-  </div>
+</div>
 </div>
 </div>
 <br>
