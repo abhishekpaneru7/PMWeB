@@ -58,14 +58,16 @@
   <div class="col-10 mx-auto">
   <div class="row text-center">
     
-      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+  <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
         <img class="card-img-top" src="img/pih.png" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Place Order</h5>
+          <h5 class="card-title">Rs: 100</h5>
+          <h5 class="card-title">Food</h5>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
+          <a href="productdetail.php" class="btn btn-primary btn-card">View Product</a>
         </div>
-        <span>&#8594;</span>
       </div>
+        
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
         <img class="card-img-top" src="img/pih.png" alt="Card image cap">
         <div class="card-body">
