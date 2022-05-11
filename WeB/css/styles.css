@@ -26,6 +26,7 @@ textarea{
   background-image: url("../img/bg3.jpg");
   background-repeat: no-repeat;
 }
+/* @sak-yobackimgmilau */
 .cont-bg{
   background-image: url("../img/bg4.jpg");
 }
@@ -670,21 +671,20 @@ th, td{
 
 /* SEARCH-BAR */
 .search-bar{
-  
   margin: 2% 2% 2% 2%;
 }
 .flex-search{
   display: flex;
 }
 .side-cat-search{
-  border: 2px solid red;
+  border: 2px solid black;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
-  background-color: #6351ce;
+  /* @sak-colormilau */
+  background-color: rgb(165, 218, 236);
 }
 .main-cat-item{
   width: 75%;
-  border: 2px solid red;
   padding-bottom: 1%;
 }
 @media screen and (max-width: 666px) {
@@ -715,21 +715,20 @@ th, td{
 
 /* SHOP */
 .shop-container{
-  border: 2px solid black;
   margin: 2% 2% 2% 2%;
 }
 .shop-flex{
   display: flex;
 }
 .sort-shop{
-  border: 2px solid red;
+  border: 2px solid black;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
-  background-color: #6351ce;
+  /* @sak-yocolormilau */
+  background-color: lightblue;
 }
 .shop-products{
   width: 75%;
-  border: 2px solid red;
   padding-bottom: 1%;
 }
 @media screen and (max-width: 666px) {

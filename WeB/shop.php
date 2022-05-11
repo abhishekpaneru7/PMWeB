@@ -14,6 +14,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
+  <!-- @sak-yomaimg haru rakha -->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/MeatProd.jpg" height="600px" alt="First slide">
