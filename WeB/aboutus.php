@@ -19,7 +19,7 @@
         </div>
     </div>
     <div id="MOT" class="container">
-      <h1 class="text-center pb-4 text-u" style="margin-top: 3%;color: white;">Meet Our Team</h1>
+      <h1 class="text-center pb-4 pt-3 text-u" style="margin-top: 4%;color: white;">Meet Our Team</h1>
       <div class="col-10 mx-auto">
       <div class="row">
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
