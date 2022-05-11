@@ -138,7 +138,7 @@
         <span>&#8594;</span>
       </div>
       <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="img/icon-pay.png" alt="Card image cap" style="height: 40% !important; width: 55% !important; margin-left: 15.5% !important;">
+        <img class="card-img-top" src="img/icon-pay.png" alt="Card image cap" style="height: 40% !important; width: 55% !important; margin-left: 23% !important;">
         <div class="card-body">
           <h5 class="card-title">Make Payment</h5>
           <p class="card-text">Your orders are recieved after the payment is confirmed. Then you will recieve the details of your order and the delivery.</p>
