@@ -49,6 +49,7 @@
                     </tr>
                 </table>
             </div>
+            <!-- @sak-cartsumko bg milao -->
             <div class="cart-sum" style="border: 2px solid black; background-color: lightcyan;">
                 <div class="container-fluid" style="width: 21rem;">
                     <h3 class="text-center mt-3">SUMMARY</h3>
