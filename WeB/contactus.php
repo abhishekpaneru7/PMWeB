@@ -9,12 +9,12 @@
   <div class="cont-bg">
     <?php include "include/header.php"; ?>
     <div class="container-fluid">
-  <h1 class="text-center pb-6 mt-5" >CONTACT US </h1>
+  <h1 class="text-center pb-6 mt-5 text-u text-white">CONTACT US </h1>
   <div class="col-10 mx-auto">
   <div class="row text-center">
       <div class="col-lg-3 py-2 m-2 mx-auto td-con" style="width: 28rem; background-color: white;">
         <div class="card-body card-body-con">
-          <h5 class="card-title">Please fill the form belo!</h5>
+          <h5 class="card-title">How Can We Help</h5>
           <br>
           <div class="name-f pb-3">
         <label for="name">Name: </label>

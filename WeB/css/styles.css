@@ -495,13 +495,13 @@ table{
   table-layout: fixed;
 }
 tr:nth-child(odd){
-  background-color: lightskyblue;
+  background-color: whitesmoke;
 }
 tr:nth-child(even){
-  background-color: lightgoldenrodyellow;
+  background-color: ghostwhite;
 }
 th{
-  background-color: lightgreen !important;
+  background-color: #6f42c1; !important;
   color: white !important;
 }
 th, td{
