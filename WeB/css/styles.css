@@ -501,7 +501,7 @@ tr:nth-child(even){
   background-color: ghostwhite;
 }
 th{
-  background-color: #6f42c1; !important;
+  background-color: #6f42c1;
   color: white !important;
 }
 th, td{
