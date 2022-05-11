@@ -773,5 +773,5 @@ th, td{
   opacity: 1;
   transition: 0.3s;
   cursor: pointer;
-  color: white;
+  color: red;
 }
