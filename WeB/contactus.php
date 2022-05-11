@@ -35,9 +35,11 @@
         </div>
         </div>
   </div>
-        </div>
-        </div>
+</div>
 <br>
-  <?php include "include/footer.php"; ?>
+<br>
+<br>
+<br>
+    <?php include "include/footer.php"; ?>
 </body>
 </html>
