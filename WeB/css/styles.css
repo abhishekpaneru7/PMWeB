@@ -18,6 +18,9 @@ textarea{
   align-self: center;
 }
 
+.text-left{
+  text-align: left;
+}
 .back-con{
   padding-bottom: 2%;
   background-image: url("../img/bg2.jpg");
