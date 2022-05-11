@@ -14,6 +14,8 @@ p {
 }
 textarea{
   resize: none;
+  max-width: 95%;
+  align-self: center;
 }
 
 .back-con{
@@ -252,6 +254,59 @@ input[type="submit"] {
   margin-right: 100px;
 }
 
+.rate-product{
+  background-color: #fdfdfd;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.rate-c-v{
+  text-align: center;
+  margin: 2% 8% 2% 8%;
+  padding: 1% 1% 1% 1%;
+  border: 1px solid black;
+}
+.rate-c-v h4{
+  text-align: center;
+}
+
+.rate-c-v p{
+  text-align: justify;
+}
+.p-r {
+  color: #333;
+  font-family: 'segoe ui', sans-serif;
+  font-size: 24pt;
+  transition: transform .5s ease;
+}
+.p-r:hover {
+  transform: scale(1.5, 1.5);
+}
+.rating {
+  display: block;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: center;
+}
+.rating .star {
+  display: none;
+}
+.rating label {
+  color: lightgray;
+  display: inline-block;
+  font-size: 22pt;
+  margin: 0 -2px;
+  transition: transform .15s ease;
+}
+.rating label:hover {
+  transform: scale(1.35, 1.35);
+}
+.rating label:hover,
+.rating label:hover ~ label {
+  color: orange;
+}
+.rating .star:checked ~ label {
+  color: orange;
+}
 
 @media screen and (max-width: 1236px) {
   .product-detail{

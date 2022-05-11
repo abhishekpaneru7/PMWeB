@@ -25,7 +25,7 @@
         <input type="email" placeholder="Your Email Here" class="text-center">
         </div>
         <label for="message">Message: </label>
-        <textarea name="message" style="resize: none;"cols="20" rows="5"></textarea>
+        <textarea name="message" style="resize: none;" cols="20" rows="5"></textarea>
         <input type="submit" class="btn btn-primary text-white" style="width: 100px;">
         </div>
         </div>
