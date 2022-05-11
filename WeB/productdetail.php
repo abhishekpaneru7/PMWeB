@@ -7,10 +7,6 @@
 </head>
 <body>
     <?php include "include/header.php"; ?>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="product-detail">
         <h1 class="text-center">PRODUCT</h1>
         <div class="flex-items">

@@ -7,8 +7,7 @@
 </head>
 <body>
     <?php
-        include "include/header.php";
-    ?><br><br><br><br>
+        include "include/header.php"; ?>
     <div class="shop-container">
       <div class="shop-flex">
         <div class="sort-shop">

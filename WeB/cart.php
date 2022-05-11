@@ -7,9 +7,6 @@
 </head>
 <body>
     <?php include "include/header.php"; ?>
-    <br>
-    <br>
-    <br>
     <div class="cart-page" style="border: 2px solid black;">
         <h1 class="text-center">My Cart</h1>
         <div class="flex-cart">

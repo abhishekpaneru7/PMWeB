@@ -8,9 +8,6 @@
 <body>
   <div class="cont-bg">
     <?php include "include/header.php"; ?>
-    <br>
-    <br>
-    <br>
     <div class="container-fluid">
   <h1 class="text-center pb-6 mt-5" >CONTACT US </h1>
   <div class="col-10 mx-auto">

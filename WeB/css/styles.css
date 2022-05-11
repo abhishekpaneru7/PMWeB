@@ -12,21 +12,10 @@ p {
   margin: 3px;
   text-align: justify;
 }
-
-/* TODO FOR ABOUT US PAGE
-#OH{
-  opacity: 0.8;
-}
-
-#OH:hover{
-  opacity : 1;
-}
-
-*/
-
 textarea{
   resize: none;
 }
+
 .back-con{
   padding-bottom: 2%;
   background-image: url("../img/bg2.jpg");

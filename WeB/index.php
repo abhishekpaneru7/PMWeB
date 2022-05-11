@@ -7,7 +7,6 @@
 </head>
 <body>
   <?php include "include/header.php"; ?>
-  <br>
     <div class="hero-image">
         <div class="moto-text">
           <h1>We Are CHF Local's Mart.</h1>

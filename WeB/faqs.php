@@ -7,7 +7,6 @@
 </head>
 <body>
     <?php include "include/header.php" ?>
-    <br>
     <div class="faq-image">
         <div class="moto-text">
           <h1>Frequnetly Asked Questions</h1>

@@ -7,15 +7,15 @@
 </head>
 <body>
     <?php include "include/header.php" ?>
-    <br>
     <div class="tac-image">
         <div class="tac-text">
           <h1>Terms And Conditions</h1>
         </div>
     </div>
     <div class="faq-con">
+
         <div class="faq-qa">
-            <h5 id="TC"; class="text-u" >Terms & Conditions</h5>
+            <h5 id="TC" class="text-u" >Terms & Conditions</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -23,8 +23,9 @@
                 </ol>
             </p>
         </div>
+
         <div class="faq-qa">
-            <h5 id="PP"; class="text-u">Privacy Policy</h5>
+            <h5 id="PP" class="text-u">Privacy Policy</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -32,8 +33,9 @@
                 </ol>
             </p>
         </div>
+
         <div class="faq-qa">
-            <h5 id="RP"; class="text-u">Return Policy</h5>
+            <h5 id="RP" class="text-u">Return Policy</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -41,8 +43,9 @@
                 </ol>
             </p>
         </div>
+
         <div class="faq-qa">
-            <h5 id="TB"; class="text-u">Trader Benifits</h5>
+            <h5 id="TB" class="text-u">Trader Benifits</h5>
             <p>
                 <ol>
                     <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, sapiente!</li>
@@ -51,7 +54,6 @@
             </p>
         </div>
     </div>
-    
     <?php include "include/footer.php" ?>
 </body>
 </html>
