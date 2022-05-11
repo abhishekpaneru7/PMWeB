@@ -14,7 +14,7 @@
   <div class="row text-center">
       <div class="col-lg-3 py-2 m-2 mx-auto td-con" style="width: 28rem;">
         <div class="card-body card-body-con">
-          <h5 class="card-title">Please fill the form belo!</h5>
+          <h5 class="card-title">Please fill the form below and let us know</h5>
           <br>
           <div class="name-f pb-3">
         <label for="name">Name: </label>
