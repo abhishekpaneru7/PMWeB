@@ -26,7 +26,6 @@ textarea{
   background-image: url("../img/bg3.jpg");
   background-repeat: no-repeat;
 }
-/* @sak-yobackimgmilau */
 .cont-bg{
   background-image: url("../img/bg4.jpg");
 }
@@ -681,8 +680,7 @@ th, td{
   border: 2px solid black;
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
-  /* @sak-colormilau */
-  background-color: rgb(165, 218, 236);
+  background-color: white;
 }
 .main-cat-item{
   width: 75%;
@@ -726,7 +724,7 @@ th, td{
   margin: 1% 1% 1% 1%;
   padding: 1% 1% 1% 1%;
   /* @sak-yocolormilau */
-  background-color: lightblue;
+  background-color: whitesmoke;
 }
 .shop-products{
   width: 75%;
