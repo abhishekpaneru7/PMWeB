@@ -23,7 +23,7 @@
     <div class="search-bar">
       <div class="flex-search">
         <div class="side-cat-search">
-        <h3>SORT BY:</h3>
+        <h3>SORT B:</h3>
           <hr class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 120px; background-color: #7c4dff; height: 2px">
           <div class="text-center">
