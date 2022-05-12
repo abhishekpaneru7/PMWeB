@@ -3,10 +3,10 @@
 INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES (1, 'CHICKEN', 'WHITE MEAT', 'Chicken is the most common type of poultry. Chicken meat and eggs have become common in many cuisines due to the relative ease and low cost of keeping chickens compared to mammals such as cattle or hogs', '2.46', '15' , 'chicken.png');
 
 --TURKEY
-INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('2','TURKEY','WHITE MEAT', 'Turkey is a large poultry bird that is similar to chicken in the white meat category. Turkey meat seems to be little darker than chicken meat, but with fewer calories. ','4','35','turkey.jpg');
+INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('2','TURKEY','WHITE MEAT', 'Turkey is a large poultry bird that is similar to chicken in the white meat category. Turkey meat seems to be little darker than chicken meat, but with fewer calories. ','4','35','turkey.png');
 
 --DUCK
-INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('3','DUCK','WHITE MEAT', 'Duck is another bird is another white meat category,. Duck meat is darker than chicken or turkey, but it is still considered as white meat. It is a healthy meat to consume because they are nutrient-dense.','2.64','10','duck.jpg');
+INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('3','DUCK','WHITE MEAT', 'Duck is another bird is another white meat category,. Duck meat is darker than chicken or turkey, but it is still considered as white meat. It is a healthy meat to consume because they are nutrient-dense.','2.64','10','duck.png');
 
 --PORK
 INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('4','PORK','RED MEAT', 'Pork is classified as red meat due to myoglobin levels in the meat. Even though fresh pork is lighter in color than beef and cooks to become very light.','2.64','17','pork.jpg');
@@ -26,7 +26,7 @@ INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUA
 INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('8','CAULIFLOWER','VEGETABLE','Cauliflower is one of several vegetables in the species brassica oleracea in the genus brassica, which is in the brassicaceae (or mustard) family. it is an annual plant that reproduces by seed. ', '2','25','cauliflower.jpg');
 
 --BROCCOLI
-INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('9','BROCCOLI','VEGETABLE','Broccoli is an edible green plant in the cabbage family. It can be eaten fresh or cooked. vitamin c and vitamin k are very abundant in broccoli. It is a nutrient-dense food that can help you live a healthier life.','1.5','20', 'broccolli.jpg');
+INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('9','BROCCOLI','VEGETABLE','Broccoli is an edible green plant in the cabbage family. It can be eaten fresh or cooked. vitamin c and vitamin k are very abundant in broccoli. It is a nutrient-dense food that can help you live a healthier life.','1.5','20', 'broccoli.jpg');
 
 --BRINJAL
 INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES('10','EGGPLANT','VEGETABLE','Eggplant is a vegetable that comes in a variety of shapes, sizes, and colors and flourishes in hot areas and throughout the summer months. All eggplant types have edible seeds, making it particularly simple to prepare.','1','20', 'eggplant.jpg');
@@ -122,17 +122,17 @@ INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QU
 
 --DELICATESSEN
 --SANDWICH
-INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('39', 'SANDWICH','BAKED ITEMS', 'A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type.', '5','50', 'sandwich.jpg');
+INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('39', 'SANDWICH','READY TO EAT ITEMS', 'A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type.', '5','50', 'sandwich.jpg');
 
 --SALAD
-INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('40', 'SALAD','BAKED ITEMS', 'A salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit. However, different varieties of salad may contain virtually any type of ready-to-eat food.','10', '20', 'salad.jpg');
+INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('40', 'SALAD','READY TO EAT ITEMS', 'A salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit. However, different varieties of salad may contain virtually any type of ready-to-eat food.','10', '20', 'salad.jpg');
 
 --YOGURT
-INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('41', 'YOGURT','BAKED ITEMS', 'Yogurt is a dairy product made by fermenting milk with a yogurt culture. It provides protein and calcium, and it may enhance healthy gut bacteria.', '5','20', 'yogurt.jpg');
+INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('41', 'YOGURT','READY TO EAT ITEMS', 'Yogurt is a dairy product made by fermenting milk with a yogurt culture. It provides protein and calcium, and it may enhance healthy gut bacteria.', '5','20', 'yogurt.jpg');
 
 --COLD CUT MEAT
-INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('42', 'COLD CUT MEAT','BAKED ITEMS', 'cold cut meats are precooked or cured meats that are sliced and served cold or hot. They are typically served in sandwiches or on a tray.', '7','20', 'coldcutmeat.jpg');
+INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('42', 'COLD CUT MEAT','READY TO EAT ITEMS', 'cold cut meats are precooked or cured meats that are sliced and served cold or hot. They are typically served in sandwiches or on a tray.', '7','20', 'coldcutmeat.png');
 
 --CHEESE
-INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('43', 'CHEESE','BAKED ITEMS', 'Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms by coagulation of the milk protein casein. It comprises proteins and fat from milk.', '3','20', 'cheese.jpg');
+INSERT INTO PRODUCT (PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, QUANTITY, IMAGE) VALUES ('43', 'CHEESE','READY TO EAT ITEMS', 'Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms by coagulation of the milk protein casein. It comprises proteins and fat from milk.', '3','20', 'cheese.jpg');
 

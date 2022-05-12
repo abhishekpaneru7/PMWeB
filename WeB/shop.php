@@ -44,52 +44,87 @@
           <hr class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 120px; background-color: #7c4dff; height: 2px">
           <h5 class="text-center">NAME</h5>
-          <form class="d-flex">
+          <form class="d-flex" action="" method="post">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <a href="search.php" type="button search-btn" class="btn btn-primary">
+              <a href="shop.php" type="button search-btn" class="btn btn-primary" name="btnSearch">
                 <i class="bi bi-search"></i>
               </a>
             </form>
           <br>
           <h5 class="text-center">ALPHABET</h5>
           &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="radio" name="alphabet" value="AESC">
+          <input type="radio" name="alphabet" value="AESC" id="sort"<?php
+                if (isset($_POST['sort']) && ($_POST['sort'] == 'AESC')) 
+                    echo ' checked="checked"'; 
+                ?> >
           <label for="AESC"> AESC </label>
           &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="radio" name="alphabet" value="DESC">
-          <label for="AESC"> DESC </label>
+          <input type="radio" name="alphabet" value="DESC" id="sort"<?php
+                if (isset($_POST['sort']) && ($_POST['sort'] == 'DESC')) 
+                    echo ' checked="checked"'; 
+                ?> >
+          <label for="DESC"> DESC </label>
           <br>
-          <br>
-          <div class="text-center">
-          <h5 class="text-center">CATEGORY</h5>
-          <input type="radio" name="category" value="fish">
-          <label for="fish"> Fish </label>
-          <br>
-          <input type="radio" name="category" value="cake">
-          <label for="cake"> Cake </label>
-          </div>
-          <br>
-          <div class="text-center">
-          <h5 class="text-center">TRADER</h5>
-          <input type="radio" name="trader" value="fishmonger">
-          <label for="AESC"> FishMonger </label>
-          <br>
-          <input type="radio" name="trader" value="baker">
-          <label for="baker"> Baker </label>
-          </div>
           <br>
           <h5 class="text-center">PRICE</h5>
           <div class="flex-search">
             <input type="number" placeholder="Min-Price" style="width: 120px;">
             <span>&#8594;</span>
             <input type="number" placeholder="Max-Price" style="width: 120px;">
-          </div>
         </div>
+        <br>
+        <br>
+        
+        
+      
+          <div class="text-center">
+          <h5 class="text-center">Shop Type</h5>
+          <input type="radio" name="trader" value="bakery">
+          <label for="bakery"> Bakery </label>
+          <br>
+          <input type="radio" name="trader" value="butcher">
+          <label for="butcher"> Butcher </label>
+          <br>
+          <input type="radio" name="trader" value="fishmonger">
+          <label for="fishmonger"> FishMonger </label>
+          <br>
+          <input type="radio" name="trader" value="greengrocher">
+          <label for="greengrocher">Green Grocher</label>
+          <br>
+          <input type="radio" name="trader" value="delicatessen">
+          <label for="delicatessen"> Delicatessen </label>
+          </div>
+          <br>
+
+          <div class="text-center">
+          <h5 class="text-center">Category</h5>
+          <input type="radio" name="Category" value="redmeat">
+          <label for="meat"> Red Meat </label>
+          <br>
+          <input type="radio" name="Category" value="whitemeat">
+          <label for="meat"> White Meat </label>
+          <br>
+          <input type="radio" name="Category" value="fruit">
+          <label for="fruit"> Fruit </label>
+          <br>
+          <input type="radio" name="Category" value="vegetable">
+          <label for="vegetable">Vegetable</label>
+          <br>
+          <input type="radio" name="Category" value="baked item">
+          <label for="baked item"> Baked items </label><br>
+          <input type="radio" name="Category" value="ready-to-eat item">
+          <label for="ready-to-eat item"> Ready to eat items </label>
+          </div>
+          <br>
+        </div>
+        
         <div class="shop-products">
         <div class="container-fluid">
   <h1 class="text-center pb-4 mt-4" >PRODUCTS</h1>
   <div class="col-10 mx-auto">
   <div class="row text-center">
+    <?php
+    ?>
     <?php
         $sql = 'Select * from product';
         $query = oci_parse($connection, $sql);
