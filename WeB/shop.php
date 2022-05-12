@@ -96,7 +96,7 @@
         oci_execute($query);
           while($row = oci_fetch_assoc($query)){
             $id = $row['PRODUCT_ID'];
-            echo '<div class="card col-lg-4 py-2 m-2 mx-auto">';
+            echo '<div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">';
               echo '<img src="./products/' .$row['IMAGE'] . '"alt="Card image cap" class="card-img-top">';
               echo '<div class="card-body">';
                 echo '<h5 class="cart-title">' . $row['PRODUCT_TITLE'] . '</h5>';
