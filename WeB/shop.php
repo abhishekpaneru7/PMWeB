@@ -1,3 +1,4 @@
+<?php include './include/connection.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,8 +90,24 @@
   <h1 class="text-center pb-4 mt-4" >PRODUCTS</h1>
   <div class="col-10 mx-auto">
   <div class="row text-center">
-    
-      <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
+    <?php
+        $sql = 'Select * from product';
+        $query = oci_parse($connection, $sql);
+        oci_execute($query);
+          while($row = oci_fetch_assoc($query)){
+            $id = $row['PRODUCT_ID'];
+            echo '<div class="card col-lg-4 py-2 m-2 mx-auto">';
+              echo '<img src="./products/' .$row['IMAGE'] . '"alt="Card image cap" class="card-img-top">';
+              echo '<div class="card-body">';
+                echo '<h5 class="cart-title">' . $row['PRODUCT_TITLE'] . '</h5>';
+                echo '<h5 class="cart-title">£' . $row['PRICE'] . '</h5>';
+                echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
+                echo '<a href="productdetail.php" class="btn btn-primary btn-card">View Product</a>';
+              echo '</div>';
+            echo '</div>';
+          }
+      ?>
+      <!-- <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
         <img class="card-img-top" src="img/pih.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Rs: 100</h5>
@@ -122,7 +139,7 @@
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet, ullam explicabo tenetur possimus illo.</p>
         </div>
         <span>&#8594;</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
