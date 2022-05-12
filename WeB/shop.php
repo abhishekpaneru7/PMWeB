@@ -101,6 +101,7 @@
               echo '<div class="card-body">';
                 echo '<h5 class="cart-title">' . $row['PRODUCT_TITLE'] . '</h5>';
                 echo '<h5 class="cart-title">£' . $row['PRICE'] . '</h5>';
+                // @parvat-be sure to make make definite size for product details so that all containers
                 echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
                 echo '</div>';
                 echo '<a href="productdetail.php" class="btn btn-primary btn-card" style="margin: 0 24px;">View Product</a>';
