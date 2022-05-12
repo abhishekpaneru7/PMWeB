@@ -21,7 +21,7 @@
       <div class="col-10 mx-auto">
       <div class="row">
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Food</h5>
         <h5 class="card-text">Role</h5>
@@ -56,7 +56,7 @@
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
-    <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+    <div class="card  col-lg-3 py-2 m-2 mx-auto mot" style="width: 18rem;">
       <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
       <div class="card-body">
       <h5 class="card-title">Food</h5>
