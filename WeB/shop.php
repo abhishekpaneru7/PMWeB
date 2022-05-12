@@ -97,13 +97,14 @@
           while($row = oci_fetch_assoc($query)){
             $id = $row['PRODUCT_ID'];
             echo '<div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">';
-              echo '<img src="./products/' .$row['IMAGE'] . '"alt="Card image cap" class="card-img-top">';
+              echo '<img src="./products/' .$row['IMAGE'] . '"alt="Card image cap" height="262px" class="card-img-top">';
               echo '<div class="card-body">';
                 echo '<h5 class="cart-title">' . $row['PRODUCT_TITLE'] . '</h5>';
                 echo '<h5 class="cart-title">£' . $row['PRICE'] . '</h5>';
                 echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
+                echo '</div>';
                 echo '<a href="productdetail.php" class="btn btn-primary btn-card">View Product</a>';
-              echo '</div>';
+              
             echo '</div>';
           }
       ?>
