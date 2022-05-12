@@ -10,8 +10,6 @@
     <?php
     include "include/header.php";
     ?>
-    <!-- @sak-bg ad aboutus-text milao -->
-
     <div id="OH" class="container rounded" style="border: 0.1px solid black; margin-top: 5%; height: auto; background-color: white;">
     <h1 class="text-center pb-4 text-u" style="margin-top: 9%;">Our History</h1>
         <div class="text text-h">
