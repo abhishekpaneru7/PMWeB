@@ -103,8 +103,7 @@
                 echo '<h5 class="cart-title">£' . $row['PRICE'] . '</h5>';
                 echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
                 echo '</div>';
-                echo '<a href="productdetail.php" class="btn btn-primary btn-card">View Product</a>';
-              
+                echo '<a href="productdetail.php" class="btn btn-primary btn-card" style="margin: 0 24px;">View Product</a>';
             echo '</div>';
           }
       ?>
