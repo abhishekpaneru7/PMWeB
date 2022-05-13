@@ -12,14 +12,15 @@
           <h1>We Are CHF Local's Mart.</h1>
           <p>Quality, Organic, Natural products directly from the farmer's hands to your doorsteps.</p>
         </div>
-        <div class="search-btn">
+        <?php include './include/search.php'; ?>
+        <!-- <div class="search-btn">
           <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <a href="search.php" type="button search-btn" class="btn btn-primary">
                 <i class="bi bi-search"></i>
               </a>
             </form>
-        </div>
+        </div> -->
     </div>
     <div class="container">
       <h1 class="text-center pb-4 mt-4">Special Category Discounts</h1>
