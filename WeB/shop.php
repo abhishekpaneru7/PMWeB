@@ -209,7 +209,7 @@
               $sql="SELECT * FROM product where SHOPID= ";
             }elseif($trader=="Delicatessen"){
               $sql="SELECT * FROM product where SHOPID= ";
-            else{
+            }else{
               $sql ="SELECT * FROM product";
             }
 
