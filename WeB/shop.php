@@ -49,20 +49,13 @@
               <a href="shop.php" type="button search-btn" class="btn btn-primary" name="btnSearch">
                 <i class="bi bi-search"></i>
               </a>
-            </form> -->
-         
-        <br>
-        <br>
-        
+            </form> -->         
+        <br>      
         
         <form action="" method="POST"> 
         <label>Shop Type:</label>
         <select name = "trader" id="trader">
             <option value="" hidden selected disabled>--Please select--</option>
-            <option value="All" <?php 
-                if (isset($_POST['trader']) && ($_POST['trader'] == 'All')) 
-                    echo 'selected'; ?>
-                >All</option>
             <option value="Bakery" <?php 
                 if (isset($_POST['trader']) && ($_POST['trader'] == 'Bakery')) 
                     echo 'selected'; ?>
@@ -87,48 +80,48 @@
 
           <div class="category">
           <label>Category:</label>  <br>
-          <input type="radio" name="Category" value="redmeat"<?php
+          <input type="checkbox" name="Category" value="redmeat"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'RED MEAT')) 
           echo 'checked="checked"';
           ?>>
           <label for="meat"> Red Meat </label>
           <br>
-          <input type="radio" name="Category" value="whitemeat"<?php
+          <input type="checkbox" name="Category" value="whitemeat"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'WHITE MEAT')) 
           echo 'checked="checked"';
           ?>>
           <label for="meat"> White Meat </label>
           <br>
-          <input type="radio" name="Category" value="fruit"<?php
+          <input type="checkbox" name="Category" value="fruit"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'FRUIT')) 
           echo 'checked="checked"';
           ?>>
           <label for="fruit"> Fruit </label>
           <br>
-          <input type="radio" name="Category" value="vegetable"<?php
+          <input type="checkbox" name="Category" value="vegetable"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'VEGETABLE')) 
           echo 'checked="checked"';
           ?>>
           <label for="vegetable">Vegetable</label>
           <br>
-          <input type="radio" name="Category" value="baked item"<?php
+          <input type="checkbox" name="Category" value="baked item"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'BAKED ITEMS')) 
           echo 'checked="checked"';
           ?>>
           <label for="fish">Fish</label>
           <br>
-          <input type="radio" name="Category" value="Fish"<?php
+          <input type="checkbox" name="Category" value="Fish"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'FISH')) 
           echo 'checked="checked"';
           ?>>
           <label for="shellfish">Shellfish</label>
           <br>
-          <input type="radio" name="Category" value="shellfish"<?php
+          <input type="checkbox" name="Category" value="shellfish"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'SHELLFISH')) 
           echo 'checked="checked"';
           ?>>
           <label for="baked item"> Baked items </label><br>
-          <input type="radio" name="Category" value="ready-to-eat item"<?php
+          <input type="checkbox" name="Category" value="ready-to-eat item"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'READY TO EAT ITEMS')) 
           echo 'checked="checked"';
           ?>>
@@ -156,6 +149,8 @@
                 ?> 
                 />Price, High to Low<br/>
                 </div>
+                <br>
+                <button type="submit" name="btnSubmit">SORT BY</button>
           <br>
           <div class="text-center">
           <h5 class="text-center">Shop Type</h5>
@@ -191,7 +186,7 @@
             <span>&#8594;</span>
             <input type="number" placeholder="Max-Price" style="width: 120px;">
         </div><br><br>
-        <button type="submit" name="btnSubmit">SORT BY</button>
+        
         </div>
         </form>
         
@@ -200,20 +195,20 @@
            //Since we have not inserted data for trader it wont work
             $trader =trim($_POST['trader']);
             if($trader=="BUTCHER"){
-                $sql="SELECT * FROM product where SHOPID= ";
+                $sql="SELECT * FROM product where SHOPID= '1'";
             }elseif($trader=="BAKERY"){
-              $sql="SELECT * FROM product where SHOPID= ";
+              $sql="SELECT * FROM product where SHOPID= '2'";
             }elseif($trader=="GREENGROCHER"){
-              $sql="SELECT * FROM product where SHOPID= ";
+              $sql="SELECT * FROM product where SHOPID= '3'";
             }elseif($trader=="FISHMONGER"){
-              $sql="SELECT * FROM product where SHOPID= ";
+              $sql="SELECT * FROM product where SHOPID= '4'";
             }elseif($trader=="Delicatessen"){
-              $sql="SELECT * FROM product where SHOPID= ";
+              $sql="SELECT * FROM product where SHOPID= '5'";
             }else{
               $sql ="SELECT * FROM product";
             }
 
-          $category =trim($_POST['Category']);
+          $category =trim($_POST['Category']?:'');
             if($category=="WHITE MEAT"){
                 $sql="SELECT * FROM product where CATEGORY='WHITE MEAT'";
             }elseif($category=="RED MEAT"){
@@ -233,9 +228,9 @@
             }else{
             $sql = "SELECT * FROM product";
         }
-        
+        $sort = isset($_POST['sortby']) ? $_POST['sortby'] : 'default_value';
+
       
-      $sort=$_POST['sortby'];
       if(!empty($sort)){
         if ($sort=='sortAtoZ'){
             $sql.=" order by PRODUCT_TITLE ASC";
@@ -244,10 +239,10 @@
             $sql.=" order by PRODUCT_TITLE DESC";
         }
         else if ($sort=='sortLowtoHigh'){
-             $sql.=" order by Price ASC";
+             $sql.=" order by PRICE ASC";
         }
         else if ($sort=='sortHightoLow'){
-            $sql.=" order by Price DESC";
+            $sql.=" order by PRICE DESC";
         }
     }
     
