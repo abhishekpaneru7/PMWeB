@@ -60,77 +60,77 @@
         <select name = "trader" id="trader">
             <option value="" hidden selected disabled>--Please select--</option>
             <option value="All" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'All')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'All')) 
                     echo 'selected'; ?>
                 >All</option>
             <option value="Bakery" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'Bakery')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'Bakery')) 
                     echo 'selected'; ?>
                 >Bakery</option>
             <option value="Butcher" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'Butcher')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'Butcher')) 
                     echo 'selected'; ?>
                 >Butcher</option>
             <option value="fishmonger" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'Fishmonger')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'Fishmonger')) 
                     echo 'selected'; ?>
                 >Fishmonger</option>
                 <option value="greengrocer" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'Greengrocher')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'Greengrocher')) 
                     echo 'selected'; ?>
                 >Greengrocher</option>
                 <option value="delicatessen" <?php 
-                if (isset($_POST['category']) && ($_POST['category'] == 'Delicatessen')) 
+                if (isset($_POST['trader']) && ($_POST['trader'] == 'Delicatessen')) 
                     echo 'selected'; ?>
                 >Fishmonger</option>
         </select><br/><br>
 
-<div class="category">
+          <div class="category">
           <label>Category:</label>  <br>
-          <input type="radio" id="Category" name="Category" value="redmeat"<?php
+          <input type="radio" name="Category" value="redmeat"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'RED MEAT')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="meat"> Red Meat </label>
           <br>
           <input type="radio" name="Category" value="whitemeat"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'WHITE MEAT')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="meat"> White Meat </label>
           <br>
           <input type="radio" name="Category" value="fruit"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'FRUIT')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="fruit"> Fruit </label>
           <br>
           <input type="radio" name="Category" value="vegetable"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'VEGETABLE')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="vegetable">Vegetable</label>
           <br>
           <input type="radio" name="Category" value="baked item"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'BAKED ITEMS')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="fish">Fish</label>
           <br>
           <input type="radio" name="Category" value="Fish"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'FISH')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="shellfish">Shellfish</label>
           <br>
           <input type="radio" name="Category" value="shellfish"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'SHELLFISH')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="baked item"> Baked items </label><br>
           <input type="radio" name="Category" value="ready-to-eat item"<?php
           if (isset($_POST['Category']) && ($_POST['Category'] == 'READY TO EAT ITEMS')) 
-          echo 'selected';
+          echo 'checked="checked"';
           ?>>
           <label for="ready-to-eat item"> Ready to eat items </label>
           
@@ -138,20 +138,20 @@
         
         <div class="sort">
         <label>Sort by:</label>  <br>      
-            <input type="radio" id="sort" name="sort" value="sortAtoZ" <?php
-                if (isset($_POST['sort']) && ($_POST['sort'] == 'sortAtoZ')) 
+            <input type="radio" name="sortby" value="sortAtoZ" <?php
+                if (isset($_POST['sortby']) && ($_POST['sortby'] == 'sortAtoZ')) 
                     echo ' checked="checked"'; 
                 ?> />Name, A to Z<br/>
-            <input type="radio" id="sort" name="sort" value="sortZtoA" <?php
-                if (isset($_POST['sort']) && ($_POST['sort'] == 'sortZtoA')) 
+            <input type="radio" name="sortby" value="sortZtoA" <?php
+                if (isset($_POST['sortby']) && ($_POST['sortby'] == 'sortZtoA')) 
                     echo ' checked="checked"'; 
                 ?> />Name, Z to A<br/>
-            <input type="radio" id="sort" name="sort" value="sortLowtoHigh" <?php
-                if (isset($_POST['sort']) && ($_POST['sort'] == 'sortLowtoHigh')) 
+            <input type="radio" name="sortby" value="sortLowtoHigh" <?php
+                if (isset($_POST['sortby']) && ($_POST['sortby'] == 'sortLowtoHigh')) 
                     echo ' checked="checked"'; 
                 ?> />Price, Low to High<br/>
-            <input type="radio" id="sort" name="sort" value="sortHightoLow" <?php
-                if (isset($_POST['sort']) && ($_POST['sort'] == 'sortHightoLow')) 
+            <input type="radio" name="sortby" value="sortHightoLow" <?php
+                if (isset($_POST['sortby']) && ($_POST['sortby'] == 'sortHightoLow')) 
                     echo ' checked="checked"'; 
                 ?> 
                 />Price, High to Low<br/>
@@ -194,10 +194,25 @@
         <button type="submit" name="btnSubmit">SORT BY</button>
         </div>
         </form>
+        
         <?php
-      
+          if (isset($_POST['btnSubmit'])){
+           //Since we have not inserted data for trader it wont work
+            $trader =trim($_POST['trader']);
+            if($trader=="BUTCHER"){
+                $sql="SELECT * FROM product where SHOPID= ";
+            }elseif($trader=="BAKERY"){
+              $sql="SELECT * FROM product where SHOPID= ";
+            }elseif($trader=="GREENGROCHER"){
+              $sql="SELECT * FROM product where SHOPID= ";
+            }elseif($trader=="FISHMONGER"){
+              $sql="SELECT * FROM product where SHOPID= ";
+            }elseif($trader=="Delicatessen"){
+              $sql="SELECT * FROM product where SHOPID= ";
+            else{
+              $sql ="SELECT * FROM product";
+            }
 
-        if (isset($_POST['btnSubmit'])){
           $category =trim($_POST['Category']);
             if($category=="WHITE MEAT"){
                 $sql="SELECT * FROM product where CATEGORY='WHITE MEAT'";
@@ -220,7 +235,7 @@
         }
         
       
-      $sort=$_POST['sort'];
+      $sort=$_POST['sortby'];
       if(!empty($sort)){
         if ($sort=='sortAtoZ'){
             $sql.=" order by PRODUCT_TITLE ASC";
@@ -245,7 +260,7 @@
   <div class="row text-center">
    
     <?php
-        $sql = 'Select * from product' ;
+        $sql = 'Select * from product';
         $query = oci_parse($connection, $sql);
         oci_execute($query);
           while($row = oci_fetch_assoc($query)){
