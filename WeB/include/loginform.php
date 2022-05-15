@@ -30,15 +30,36 @@
         $email = $_POST['txtEmail'];
         $password = $_POST['txtPassword'];
         $user = $_POST['users'];
-        $sql = "Select * from $user where email = '$email' and password = '$password'";
+        $sql = "SELECT * FROM CUSTOMER where EMAIL = '$email' AND PASSWORD = '$password'";
         $result = oci_parse($connection, $sql);
         oci_execute($result);
         if($row = oci_fetch_assoc($result)){
-            $_SESSION['user'] = "Select firstname from $user where email = '$email' and password = '$password'";
+            $_SESSION['user'] = "SELECT FIRST_NAME FROM CUSTOMER WHERE EMAIL = '$email' AND PASSWORD = '$password'";
             header('location: ./index.php');
         }else{
             $_SESSION['error'] = '<script>alert("User not recognized")</script>';
             echo $_SESSION['error'];
         }
+}
+
+    else{
+
+        if(isset($_POST['loginBtn'])){
+            $email = $_POST['txtEmail'];
+            $password = $_POST['txtPassword'];
+            $user = $_POST['users'];
+            $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password'";
+            $result = oci_parse($connection, $sql);
+            oci_execute($result);
+            if($row = oci_fetch_assoc($result)){
+                $_SESSION['user'] = "SELECT FIRST_NAME FROM TRADER WHERE EMAIL = '$email' AND PASSWORD = '$password'";
+                header('location: ./index.php');
+            }else{
+                $_SESSION['error'] = '<script>alert("User not recognized")</script>';
+                echo $_SESSION['error'];
+            }
+    }
     }
 ?>
+
+
