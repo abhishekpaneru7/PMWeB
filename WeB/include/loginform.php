@@ -1,6 +1,4 @@
 <?php include 'connection.php'; ?>
-<head>
-</head>
 <body>
     
     <form action="login.php" method="post" class="forms">
@@ -24,41 +22,30 @@
         </fieldset>
     </form>
 </body>
-</html>
 <?php
     if(isset($_POST['loginBtn'])){
         $email = $_POST['txtEmail'];
         $password = $_POST['txtPassword'];
         $user = $_POST['users'];
-        $sql = "SELECT * FROM CUSTOMER where EMAIL = '$email' AND PASSWORD = '$password'";
+        $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";
+
+        // if ($user=='Customer'){
+        //     $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";
+        // }
+        // else{
+        //     $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password'";
+        // }
+        
         $result = oci_parse($connection, $sql);
         oci_execute($result);
         if($row = oci_fetch_assoc($result)){
-            $_SESSION['user'] = "SELECT FIRST_NAME FROM CUSTOMER WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-            header('location: ./index.php');
+            $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
+            // header('location: ./index.php');
+            echo("<script>location.href='./index.php'</script>");
         }else{
             $_SESSION['error'] = '<script>alert("User not recognized")</script>';
             echo $_SESSION['error'];
         }
-}
-
-    else{
-
-        if(isset($_POST['loginBtn'])){
-            $email = $_POST['txtEmail'];
-            $password = $_POST['txtPassword'];
-            $user = $_POST['users'];
-            $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password'";
-            $result = oci_parse($connection, $sql);
-            oci_execute($result);
-            if($row = oci_fetch_assoc($result)){
-                $_SESSION['user'] = "SELECT FIRST_NAME FROM TRADER WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-                header('location: ./index.php');
-            }else{
-                $_SESSION['error'] = '<script>alert("User not recognized")</script>';
-                echo $_SESSION['error'];
-            }
-    }
     }
 ?>
 
