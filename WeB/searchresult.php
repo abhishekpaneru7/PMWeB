@@ -11,9 +11,13 @@
    include "include/header.php"; 
    include "include/search.php";
    echo '<br><br><br><br><br><br>';
-   if(isset($_GET['searchBtn'])){
-   $search = $_GET['searchKey'];
+   if(isset($_POST['searchBtn'])){
+   $search = $_POST['searchKey'];
    $sql = "Select * from product where LOWER(PRODUCT_TITLE) like LOWER('%$search%')";
+   }else{
+     $trader = $_GET['trader'];
+     $sql = 'Select * from product p, shop s where s.shop_id = p.shop_id and LOWER(TRADERTYPE) = LOWER(\'' . $trader . '\')';
+   }
    $result = oci_parse($connection, $sql);
    oci_execute($result);
    echo '<h1 class="text-center pb-4 mt-4">Result</h1>';
@@ -34,7 +38,6 @@
       }
     echo '</div>';
    echo '</div>';
- }
   ?>
 </body>
 </html>

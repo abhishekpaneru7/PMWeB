@@ -30,33 +30,33 @@
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
       <img class="card-img-top" src="img/DairyProd.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
+        <h5 class="card-title">Dairy Products</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="shop.php" class="btn btn-primary btn-card">Explore</a>
+        <?php echo "<a href=searchresult.php?trader=Dellicatessen class=\"btn btn-primary btn-card\" >Explore</a>";?>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
       <img class="card-img-top" src="img/MeatProd.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
+        <h5 class="card-title">Meat Products</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary">Explore</a>
+        <?php echo "<a href=searchresult.php?trader=Butcher class=\"btn btn-primary btn-card\" >Explore</a>";?>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
       <img class="card-img-top" src="img/SeaProd.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
+        <h5 class="card-title">Sea Food</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary">Explore</a>
+        <?php echo "<a href=searchresult.php?trader=Fishmonger class=\"btn btn-primary btn-card\" >Explore</a>";?>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
       <img class="card-img-top" src="img/VegetableProd.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
+        <h5 class="card-title">Vegetables</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
-        <a href="#" class="btn btn-primary">Explore</a>
+        <?php echo "<a href=searchresult.php?trader=Greengrocher class=\"btn btn-primary btn-card\" >Explore</a>";?>
       </div>
     </div>
     </div>
@@ -66,7 +66,31 @@
     <h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>
     <div class="col-12 mx-auto">
     <div class="row">
-  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+  <?php
+    $sql = 'select * from product where rating is not null order by rating';
+    $result = oci_parse($connection, $sql);
+    oci_execute($result);
+    while($row = oci_fetch_assoc($result)){
+      echo '<div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">';
+        echo '<img class="card-img-top" src="./products/' .$row['IMAGE'] . '" alt="Card image cap">';
+        echo '<div class="card-body">';
+          echo '<h5 class="card-title">' .$row['PRODUCT_TITLE'] . '</h5>';
+          echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
+          // echo $row['RATING'];
+          $rating = $row['RATING'];
+          for($rating; $rating > 0; $rating--){
+            if($rating == 0.5){
+              echo '<span class="fa fa-star-half-stroke checked"></span>';
+            }else{
+              echo '<span class ="fa fa-star checked"></span>';
+            }
+          }
+          echo '<br><a href="productdetail.php" class="btn btn-primary text-center btn-card">View Product</a>';
+        echo '</div>';
+      echo '</div>';
+    }
+  ?>
+  <!-- <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
     <img class="card-img-top" src="img/Dragonfruit.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Food</h5>
@@ -78,8 +102,10 @@
       <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       <a href="productdetail.php" class="btn btn-primary text-center btn-card">Details</a>
     </div>
-  </div>
-  <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
+  </div> -->
+
+
+  <!-- <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
     <img class="card-img-top" src="img/KingCrab.jpg" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Food</h5>
@@ -118,8 +144,8 @@
         <span class="fa fa-star"></span>
       <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
       <a href="#" class="btn btn-primary text-center">View Product</a>
-    </div>
-  </div>
+    </div> 
+  </div>-->
   </div>
 </div>
 </div>  
