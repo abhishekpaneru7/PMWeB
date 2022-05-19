@@ -67,12 +67,12 @@
     <div class="col-12 mx-auto">
     <div class="row">
   <?php
-    $sql = 'select * from product where rating is not null order by rating';
+    $sql = 'select * from product where rating is not null and rownum <= 4 order by rating desc';
     $result = oci_parse($connection, $sql);
     oci_execute($result);
     while($row = oci_fetch_assoc($result)){
       echo '<div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">';
-        echo '<img class="card-img-top" src="./products/' .$row['IMAGE'] . '" alt="Card image cap">';
+        echo '<img class="card-img-top" src="./products/' .$row['IMAGE'] . '" alt="Card image cap" height="262px">';
         echo '<div class="card-body">';
           echo '<h5 class="card-title">' .$row['PRODUCT_TITLE'] . '</h5>';
           echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
