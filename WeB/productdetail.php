@@ -10,29 +10,31 @@
     <?php include "include/header.php"; ?>
     <br>
     <div class="product-detail">
-        <h1 class="text-center">PRODUCT</h1>
-        <div class="flex-items">
-            <div class="product-img">
-                <img src="img/pih.png" alt="" class="size">
-            </div>
-            <div class="product-details">
-                <h5>PRODUCT DETAILS:</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptate quisquam voluptatem quia numquam optio ab sapiente, deserunt culpa itaque doloribus, doloremque blanditiis ut iure fuga! Odio est consectetur sed fugiat. Sit nostrum dolorum iste, cupiditate enim possimus quaerat quas neque aliquam perspiciatis sunt fugit magnam, blanditiis asperiores delectus dignissimos!</p>
-                <h3>PRICE : $450</h3>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <h4>45 <br> REMAINING IN STOCK</h4>
-                <div class="flex-items">
-                <a href="" class="btn btn-primary">Add to Card <i class="fas fa-shopping-cart"></i></a>
-                &nbsp;
-                <a href="" class="btn btn-danger">Buy Now</a>
-                </div>
-                <br>
-            </div>
-        </div>
+        <?php
+            $id = $_GET['id'];
+            $sql = "Select * from product where PRODUCT_ID = $id";
+            $result = oci_parse($connection, $sql);
+            oci_execute($result);
+            while($row = oci_fetch_assoc($result)){
+                echo '<h1 class="text-center">' . $row['PRODUCT_TITLE'] . '</h1>';
+                echo '<div class="flex-items">';
+                    echo '<div class="product-img">';
+                        echo '<img src="./products/' . $row['IMAGE'] . '" alt="" class="size">';
+                    echo '</div>';
+                    echo '<div class="product-details">';
+                        echo '<h5>PRODUCT DETAILS:</h5>';
+                        echo '<p>' . $row['DESCRIPTION'] . '</p>';
+                        echo '<h3>PRICE : £' . $row['PRICE'] . '</h3>';
+                        include './include/rating.php';
+                        echo '<h5>' . $row['QUANTITY'] .'<br> REMAINING IN STOCK</h5>';
+                        echo '<div class="flex-items">';
+                            echo "<a href=\"cart.php?id=$id\" class=\"btn btn-primary\">Add to Card <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
+                            echo '<a href="" class="btn btn-danger">Buy Now</a>';
+                        echo '</div>';
+                    echo '</div><br>';
+                echo '</div><br>';
+            }
+        ?>
     </div>
     <div class="product-detail">
         <div class="rate-product">
