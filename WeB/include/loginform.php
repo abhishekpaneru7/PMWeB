@@ -1,6 +1,4 @@
-<?php include 'connection.php'; ?>
-<body>
-    
+<body>    
     <form action="login.php" method="post" class="forms">
     
         <fieldset class="border rounded-3 p-3 mt-5">
@@ -22,7 +20,9 @@
         </fieldset>
     </form>
 </body>
+
 <?php
+include 'connection.php';
     if(isset($_POST['loginBtn'])){
         $email = $_POST['txtEmail'];
         $password = $_POST['txtPassword'];

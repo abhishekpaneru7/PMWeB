@@ -1,4 +1,4 @@
-<?php include'connection.php';?>
+<?php include 'connection.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +43,7 @@
               }else{
                 ?>
               <!-- @preeti-yo line ta mathi ko &nbsp; lai if else ma hala ani if session set xa bhane dekhaune natra na dekhaune bhanau thnx.. -->
-              <a href="#" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
+              <a href="logout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
               <?php } ?>
             </ul>
           </div>
