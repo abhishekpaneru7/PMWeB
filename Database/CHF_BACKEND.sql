@@ -48,6 +48,6 @@ CREATE TABLE CART(
 customer_id number(5) REFERENCES customer (customer_id),
 product_id number (5) REFERENCES product (product_id),
 quantity number (3) not null,
-total VARCHAR2(50) not null,
+total Number(10) not null,
 primary key(customer_id, product_id)    
 );
