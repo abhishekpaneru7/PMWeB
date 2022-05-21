@@ -15,8 +15,6 @@
                 <input type="text" name="txtFirstName" class="forms-control" value=""><br>
                 <label for="LastName" class="forms-label">Last Name</label>
                 <input type="text" name="txtLastName" class="forms-control" value=""><br>
-                <label for="Username" class="forms-label">Username</label>
-                <input type="text" name="txtUsername" class="forms-control" value=""><br>
                 <label for="Email" class="forms-label" style="padding-right:50px">Email</label>
                 <input type="email" name="txtEmail" class="forms-control" value=""><br>
                 <label for="Age" class="forms-label" style="padding-right:50px">Age</label>
