@@ -27,25 +27,18 @@ include 'connection.php';
         $email = $_POST['txtEmail'];
         $password = $_POST['txtPassword'];
         $user = $_POST['users'];
-        $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";
-
-        // if ($user=='Customer'){
-        //     $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";
-        // }
-        // else{
-        //     $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password'";
-        // }
-        
+        $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";       
         $result = oci_parse($connection, $sql);
         oci_execute($result);
         if($row = oci_fetch_assoc($result)){
             $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
             // header('location: ./index.php');
-            echo("<script>location.href='./index.php'</script>");
+            echo("<script>location.href='./cart.php'</script>");
         }else{
             $_SESSION['error'] = '<script>alert("User not recognized")</script>';
             echo $_SESSION['error'];
         }
+
     }
 ?>
 
