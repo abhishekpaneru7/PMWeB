@@ -7,9 +7,9 @@
             <legend class="float-none w-auto px-3"><h1>Customer Profile</h1></legend>
             <div class="forms-content">
                 <h2>Please update your profile below!</h2>
-                <label for="profileImage" class="forms-label">Profile Picture</label>
+                <!-- <label for="profileImage" class="forms-label">Profile Picture</label>
                 <img src="pih.png" alt="" class="forms-content" height="30px" width="30px">
-                <a href="" class="forms-content">Change</a>
+                <a href="" class="forms-content">Change</a> -->
                 <br>
                 <label for="fistName" class="forms-label">First Name</label>
                 <input type="text" name="txtFirstName" class="forms-control" value=""><br>

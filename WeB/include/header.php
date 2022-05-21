@@ -42,7 +42,8 @@
               <?php
               }else{
                 ?>
-              <!-- @preeti-yo line ta mathi ko &nbsp; lai if else ma hala ani if session set xa bhane dekhaune natra na dekhaune bhanau thnx.. -->
+                <a href="profilecustomerform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
+              &nbsp;
               <a href="signout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
               <?php } ?>
             </ul>
