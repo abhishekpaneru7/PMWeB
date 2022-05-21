@@ -2,6 +2,8 @@ DROP TABLE CUSTOMER CASCADE CONSTRAINTS;
 DROP TABLE TRADER CASCADE CONSTRAINTS;
 DROP TABLE PRODUCT CASCADE CONSTRAINTS;
 DROP TABLE SHOP CASCADE CONSTRAINTS;
+DROP TABLE CART CASCADE CONSTRAINTS;
+
 
 
 Create table customer (
@@ -36,8 +38,16 @@ CREATE TABLE PRODUCT(
     category VARCHAR2(50) not null,
     description VARCHAR2(500),
     price number(8,3) not null,
-    quantity number(3) not null,
+    stock_quantity number(3) not null,
     image VARCHAR2(255) not null,
     shop_id number(5) REFERENCES SHOP(shop_id)
     
+);
+
+CREATE TABLE CART(
+customer_id number(5) REFERENCES customer (customer_id),
+product_id number (5) REFERENCES product (product_id),
+quantity number (3) not null,
+total VARCHAR2(50) not null,
+primary key(customer_id, product_id)    
 );
