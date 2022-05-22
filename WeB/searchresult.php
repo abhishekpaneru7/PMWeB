@@ -7,8 +7,9 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-   <?php 
-   include "include/header.php";
+<?php 
+   
+  include "include/header.php"; 
    include "include/search.php";
    echo '<br><br><br><br><br><br><br><br><br><br>';
    if(isset($_POST['searchBtn'])){
