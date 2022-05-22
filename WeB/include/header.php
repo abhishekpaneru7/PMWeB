@@ -41,11 +41,19 @@
               &nbsp;
               <?php
               }else{
+                if($_SESSION['role']=='Customer'){
                 ?>
                 <a href="profilecustomerform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
               &nbsp;
-              <a href="signout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
-              <?php } ?>
+              <?php }
+                else{?>
+                <a href="profiletraderform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
+              &nbsp;
+                <?php } ?>
+                &nbsp;
+                <a href="signout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
+              <?php }?>
+            
             </ul>
           </div>
         </div>
