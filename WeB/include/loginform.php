@@ -56,7 +56,7 @@ if(isset($_POST['loginBtn'])){
     if($row = oci_fetch_assoc($result)){
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
         // header('location: ./index.php');
-        echo("<script>location.href='./index.php'</script>");
+        echo("<script>location.href='./cart.php'</script>");
     }else{
         $_SESSION['error'] = '<script>alert("User not recognized")</script>';
         echo $_SESSION['error'];

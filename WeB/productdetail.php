@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <?php include "include/header.php"; ?>
+<?php if(empty($_SESSION['users'])){
+      include "include/header.php"; }
+   elseif($_SESSION['role']=='Customer'){
+      include "include/customerheader.php";}
+    else{
+      include "include/traderheader.php";
+        }
+?>
     <br>
     <div class="product-detail">
         <?php

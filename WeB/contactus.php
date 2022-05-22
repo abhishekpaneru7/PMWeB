@@ -7,7 +7,14 @@
 </head>
 <body>
   <div class="cont-bg">
-    <?php include "include/header.php"; ?>
+  <?php if(empty($_SESSION['users'])){
+      include "include/header.php"; }
+   elseif($_SESSION['role']=='Customer'){
+      include "include/customerheader.php";}
+    else{
+      include "include/traderheader.php";
+        }
+?>
     <div class="container-fluid">
   <h1 class="text-center pb-6 mt-5 text-u text-white">CONTACT US </h1>
   <div class="col-10 mx-auto">

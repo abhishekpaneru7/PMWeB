@@ -5,8 +5,15 @@
     <title>CHF Login Page</title>
 </head>
 <body>
-    <?php
-    include "./include/header.php";
+
+    <?php if(empty($_SESSION['users'])){
+        include "include/header.php"; }
+        elseif($_SESSION['role']=='Customer'){
+        include "include/customerheader.php";}
+        else{
+        include "include/traderheader.php";
+          }
+
     include "./include/loginform.php";
     include "./include/footer.php";
 ?>
