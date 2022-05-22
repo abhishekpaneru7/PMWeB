@@ -32,17 +32,19 @@
                 <a class="nav-link btn btn-dark btn-nav" aria-current="page" href="aboutus.php" style="color: white; margin-right: %;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">About Us</a>
               </li>
               &nbsp;
-              <a href="cart.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
-              &nbsp;
               <?php
               if (empty($_SESSION['users'])){
                 ?>
+              <a href="cart.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
+              &nbsp;
               <a href="login.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
               &nbsp;
               <?php
               }else{
                 if($_SESSION['role']=='Customer'){
                 ?>
+                <a href="cart.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-cart2"></i></a>
+                &nbsp;
                 <a href="profilecustomerform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
               &nbsp;
               <?php }
