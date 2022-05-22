@@ -69,6 +69,7 @@ if(isset($_POST['loginBtn'])){
        $result = oci_parse($connection, $sql);
     oci_execute($result);
     if($row = oci_fetch_assoc($result)){
+        $_SESSION['trader_id'] = $row['TRADER_ID'];
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
         // header('location: ./index.php');
         echo("<script>location.href='./index.php'</script>");

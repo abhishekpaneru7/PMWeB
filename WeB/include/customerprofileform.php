@@ -1,6 +1,7 @@
 <?php
     include 'connection.php'; 
-    $id = $_GET['id'];
+    // $id = $_GET['id'];
+    $id = $_SESSION['id'];
     $sql = "Select * from CUSTOMER where CUSTOMER_ID = $id";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
