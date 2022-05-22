@@ -42,14 +42,14 @@
               <?php
               }else{
                 if($_SESSION['role']=='Customer'){
-                $id = $_SESSION['id'];
-                echo "<a href=\"profilecustomerform.php?id=$id\" class=\"btn btn-dark btn-nav text-center\" onMouseOver=\"this.style.color=\'#E09C78\'\" onMouseOut=\"this.style.color=\'white\'\"><i class=\"bi bi-person\"></i></a>";
-              echo '&nbsp';
-              }
-                else{
-                echo '<a href="profiletraderform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color=\'#E09C78\'" onMouseOut="this.style.color=\'white\'"><i class="bi bi-person"></i></a>';
-              echo '&nbsp';
-                  } ?>
+                ?>
+                <a href="profilecustomerform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
+              &nbsp;
+              <?php }
+                else{?>
+                <a href="profiletraderform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
+              &nbsp;
+                <?php } ?>
                 &nbsp;
                 <a href="signout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
               <?php }?>
