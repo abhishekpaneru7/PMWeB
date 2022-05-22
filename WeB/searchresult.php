@@ -8,7 +8,7 @@
 </head>
 <body>
   <?php 
-   <?php if(empty($_SESSION['users'])){
+   if(empty($_SESSION['users'])){
     include "include/header.php"; }
  elseif($_SESSION['role']=='Customer'){
     include "include/customerheader.php";}
