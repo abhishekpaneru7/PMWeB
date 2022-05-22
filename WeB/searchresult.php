@@ -8,13 +8,8 @@
 </head>
 <body>
   <?php 
-   <?php if(empty($_SESSION['users'])){
-    include "include/header.php"; }
- elseif($_SESSION['role']=='Customer'){
-    include "include/customerheader.php";}
-  else{
-    include "include/traderheader.php";
-      }
+   <?php 
+    include "include/header.php";
 ?> 
    include "include/search.php";
    echo '<br><br><br><br><br><br>';
