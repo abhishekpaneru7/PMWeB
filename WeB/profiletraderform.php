@@ -5,13 +5,8 @@
     <title></title>
 </head>
 <body>
-        i<?php if(empty($_SESSION['users'])){
-            include "include/header.php"; }
-         elseif($_SESSION['role']=='Customer'){
-            include "include/customerheader.php";}
-          else{
-            include "include/traderheader.php";
-              }
+        <?php 
+        include "include/header.php";
         include "./include/traderprofileform.php";
         include "./include/footer.php";
     ?>

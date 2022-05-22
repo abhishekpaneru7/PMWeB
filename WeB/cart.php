@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<?php if(empty($_SESSION['users'])){
-      include "include/header.php"; }
-   elseif($_SESSION['role']=='Customer'){
-      include "include/customerheader.php";}
-    else{
-      include "include/traderheader.php";
-        }
+<?php 
+      include "include/header.php"; 
 ?>
     <div class="cart-page" style="border: 2px solid black;">
         <h1 class="text-center">My Cart</h1>
