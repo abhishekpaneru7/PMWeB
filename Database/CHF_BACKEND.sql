@@ -16,6 +16,12 @@ Create table customer (
     password VARCHAR2(50) not null
 );
 
+CREATE TABLE SHOP(
+shop_id number(5) PRIMARY KEY,
+tradertype VARCHAR2(15) NOT NULL UNIQUE
+
+);
+
 CREATE TABLE TRADER(
     trader_id number(5) primary key,
     first_name VARCHAR2(50) not null,
@@ -26,11 +32,7 @@ CREATE TABLE TRADER(
     shop_id NUMBER(10) REFERENCES SHOP(shop_id)
 );
 
-CREATE TABLE SHOP(
-shop_id number(5) PRIMARY KEY,
-tradertype VARCHAR2(15) NOT NULL UNIQUE
 
-);
 
 CREATE TABLE PRODUCT(
     product_id number(5) primary key,
