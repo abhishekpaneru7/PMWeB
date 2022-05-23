@@ -22,6 +22,7 @@
             <div class="cart-table">
                 <table>
                     <tr>
+                        <th></th>
                         <th>Product</th>
                         <th>Price</th>
                         <th>Quantity</th>
