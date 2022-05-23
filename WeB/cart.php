@@ -8,6 +8,11 @@
 <body>
 <?php 
       include "include/header.php"; 
+      if (empty($_SESSION['users'])){
+        echo"<br><br><br><br><br><br><br><br><h1>Please Login to your account</h1><br><br><br><br><br><br>";
+        echo"<script>alert(\"Please Login to your account.\")</script>";
+        }
+    else{
 ?>
     <div class="cart-page" style="border: 2px solid black;">
         <h1 class="text-center">My Cart</h1>
@@ -76,6 +81,6 @@
         </div>
         <br>
     </div>
-    <?php include "include/footer.php"; ?>
+    <?php } include "include/footer.php"; ?>
 </body>
 </html>

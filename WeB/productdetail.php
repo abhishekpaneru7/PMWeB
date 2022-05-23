@@ -28,9 +28,9 @@
                         echo '<p>' . $row['DESCRIPTION'] . '</p>';
                         echo '<h3>PRICE : £' . $row['PRICE'] . '</h3>';
                         include './include/rating.php';
-                        echo '<h5>' . $row['QUANTITY'] .'<br> REMAINING IN STOCK</h5>';
+                        echo '<h5>' . $row['STOCK_QUANTITY'] .'<br> REMAINING IN STOCK</h5>';
                         echo '<div class="flex-items">';
-                            echo "<a href=\"cart.php?id=$id\" class=\"btn btn-primary\">Add to Card <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
+                            echo "<a href=\"cart.php?id=$id\" class=\"btn btn-primary\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
                             echo '<a href="" class="btn btn-danger">Buy Now</a>';
                         echo '</div>';
                     echo '</div><br>';
