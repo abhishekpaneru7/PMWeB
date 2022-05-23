@@ -64,15 +64,16 @@
     </div>
 </div>  
   </div>
+  <div class="container">
+  <h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>;
+  <div class="col-12 mx-auto">
+  <div class="row">
   <?php
     $sql = 'select * from product where rating is not null and rownum <= 4 order by rating desc';
     $result = oci_parse($connection, $sql);
     oci_execute($result);
     while($row = oci_fetch_assoc($result)){
-      echo '<div class="container">';
-    echo '<h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>';
-    echo '<div class="col-12 mx-auto">';
-    echo '<div class="row">';
+    
       $id = $row['PRODUCT_ID'];
       echo '<div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">';
         echo '<img class="card-img-top" src="./products/' .$row['IMAGE'] . '" alt="Card image cap" height="262px">';
