@@ -49,7 +49,15 @@
     $lastname = $_POST['txtLastName'];
     if(!empty($_POST['txtEmail'])){
      $email = $_POST['txtEmail'];
-     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+     //Unique Email verification
+     $emailverify = "SELECT * FROM Customer WHERE email = '$email'";
+     $select = oci_parse($connection, $emailverify);
+     oci_execute($select, OCI_NO_AUTO_COMMIT);
+     $rows = oci_fetch_all($select, $res);
+     if ($rows > 0) {
+     echo "<script>alert(\"This email already exist.\")</script>";
+     }
+     elseif(filter_var($email, FILTER_VALIDATE_EMAIL)){
       if(!empty($_POST['txtAge'])){
        $age = $_POST['txtAge'];
        if(!empty($_POST['rdoGender'])){

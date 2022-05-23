@@ -13,14 +13,14 @@
                 <input type="email" name="txtEmail" class="forms-control" value="<?php echo $_POST ['txtEmail'] ?? ''; ?>"><br>
                 <label for="ShopName" class="forms-label">Shop Name</label>
                 <input type="text" name="txtShopName" class="forms-control"  value="<?php echo $_POST ['txtShopName'] ?? ''; ?>"><br>
-                <label for="ShopType" class="forms-label">Shop Type</label>
-                <select name="ShopType" class="forms-control">
+                <label for="TraderType" class="forms-label">Shop Type</label>
+                <select name="TraderType" class="forms-control">
                     <option value="">Select Shop Type</option>
-                    <option value="sample1" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'Butcher' ? 'selected' : ''; ?>>Butcher</option>
-                    <option value="sample2" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'Bakery' ? 'selected' : ''; ?>>Bakery</option>
-                    <option value="sample3" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'Fishmonger' ? 'selected' : ''; ?>>Fishmonger</option>
-                    <option value="sample4" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'Greengrocher' ? 'selected' : ''; ?>>Greengrocher</option>
-                    <option value="sample5" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'Dellicatessen' ? 'selected' : ''; ?>>Dellicatessen</option>
+                    <option value="Butcher" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Butcher' ? 'selected' : ''; ?>>Butcher</option>
+                    <option value="Bakery" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Bakery' ? 'selected' : ''; ?>>Bakery</option>
+                    <option value="Fishmonger" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Fishmonger' ? 'selected' : ''; ?>>Fishmonger</option>
+                    <option value="Greengrocher" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Greengrocher' ? 'selected' : ''; ?>>Greengrocher</option>
+                    <option value="Dellicatessen" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Dellicatessen' ? 'selected' : ''; ?>>Dellicatessen</option>
                 </select>
                 <label for="Password" class="forms-label">Password</label>
                 <input type="password" name="txtPassword" class="forms-control">
@@ -50,11 +50,19 @@
                 $lastname = $_POST['txtLastName'];
                 if(!empty($_POST['txtEmail'])){
                     $email = $_POST['txtEmail'];
-                    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+                    //Unique Email verification
+                    $emailverify = "SELECT * FROM Trader WHERE email = '$email'";
+                    $select = oci_parse($connection, $emailverify);
+                    oci_execute($select, OCI_NO_AUTO_COMMIT);
+                    $rows = oci_fetch_all($select, $res);
+                    if ($rows > 0) {
+                        echo "<script>alert(\"This email already exist.\")</script>";
+                    }
+                    elseif(filter_var($email, FILTER_VALIDATE_EMAIL)){                        
                         if(!empty($_POST['txtShopName'])){
                             $shopname = $_POST['txtShopName'];
-                            if(!empty($_POST['ShopType'])){
-                                $shoptype = $_POST['ShopType'];
+                            if(!empty($_POST['TraderType'])){
+                                $tradertype = $_POST['TraderType'];
                                 if(!empty($_POST['txtPassword'])){
                                     $password = $_POST['txtPassword'];
                                     if(preg_match('/[a-z]/',$password) && preg_match('/[A-Z]/',$password) && preg_match('/[0-9]/',$password)){
@@ -62,6 +70,7 @@
                                             $confpassword = $_POST['txtConfPassword'];
                                             if($password === $confpassword){
                                                 if(!empty($_POST['termsCond'])){
+
                                                     $sql = "insert into trader(trader_id, first_name, last_name, email, shop_name, shop_type, password) values(null, '$firstname', '$lastname', '$email', '$shopname','$shoptype','$password')";
 
                                                     $query = oci_parse($connection, $sql);
