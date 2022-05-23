@@ -9,7 +9,7 @@
 <?php 
       include "include/header.php"; 
       if (empty($_SESSION['users'])){
-        echo"<br><br><br><br><br><br><br><br><h1>Please Login to your account</h1><br><br><br><br><br><br>";
+        echo"<br><br><br><br><br><br><br><br><center><h1>Please Login to your account !!</h1></center><br><br><br><br><br><br><br><br><br>";
         echo"<script>alert(\"Please Login to your account.\")</script>";
         }
     else{
