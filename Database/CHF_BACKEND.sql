@@ -42,6 +42,7 @@ CREATE TABLE PRODUCT(
     price number(8,3) not null,
     stock_quantity number(3) not null,
     image VARCHAR2(255) not null,
+    rating number (2,1),
     shop_id number(5) REFERENCES SHOP(shop_id)
     
 );
