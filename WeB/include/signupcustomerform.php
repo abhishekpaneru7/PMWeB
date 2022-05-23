@@ -66,7 +66,9 @@
             //  mysqli_query($connection, $sql);
             $query = oci_parse($connection, $sql);
             oci_execute($query);
-            // echo "<script>alert(\"Signedup Successfully.\")</script>";
+            echo "<script>alert(\"Signedup Successfully.\");";
+            echo "window.location.href=\"./login.php\"";
+            echo "</script>";
             }else{
                 echo "<script>alert(\"please agree to terms & condition.\")</script>";
             }

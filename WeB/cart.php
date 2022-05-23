@@ -9,8 +9,9 @@
 <?php 
       include "include/header.php"; 
       if (empty($_SESSION['users'])){
-        echo"<br><br><br><br><br><br><br><br><h1>Please Login to your account</h1><br><br><br><br><br><br>";
-        echo"<script>alert(\"Please Login to your account.\")</script>";
+        echo"<script>alert(\"Please Login to your account.\");";
+            echo "window.location.href=\"./login.php\";";
+        echo "</script>";
         }
     else{
 ?>
@@ -25,27 +26,6 @@
                         <th>Quantity</th>
                         <th>Total</th>
                         <th></th>
-                    </tr>
-                    <tr>
-                        <td>Food</td>
-                        <td>55</td>
-                        <td>2</td>
-                        <td>110</td>
-                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Food</td>
-                        <td>55</td>
-                        <td>2</td>
-                        <td>110</td>
-                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Food</td>
-                        <td>55</td>
-                        <td>2</td>
-                        <td>110</td>
-                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
                     </tr>
                     <tr>
                         <td>Food</td>
