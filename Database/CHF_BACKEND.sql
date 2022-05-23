@@ -16,21 +16,23 @@ Create table customer (
     password VARCHAR2(50) not null
 );
 
+CREATE TABLE SHOP(
+shop_id number(5) PRIMARY KEY,
+tradertype VARCHAR2(15) NOT NULL UNIQUE
+
+);
+
 CREATE TABLE TRADER(
     trader_id number(5) primary key,
     first_name VARCHAR2(50) not null,
     last_name VARCHAR2(50) not null,
     email VARCHAR2(50) not null,
     shop_name VARCHAR2(50) not null,
-    shop_type VARCHAR2(50) not null,
-    password VARCHAR2(50) not null
+    password VARCHAR2(50) not null,
+    shop_id NUMBER(10) REFERENCES SHOP(shop_id)
 );
 
-CREATE TABLE SHOP(
-shop_id number(5) PRIMARY KEY,
-tradertype VARCHAR2(15) NOT NULL UNIQUE
---trader_id NUMBER(10) REFERENCES TRADER(TRADER_ID)
-);
+
 
 CREATE TABLE PRODUCT(
     product_id number(5) primary key,
@@ -48,6 +50,6 @@ CREATE TABLE CART(
 customer_id number(5) REFERENCES customer (customer_id),
 product_id number (5) REFERENCES product (product_id),
 quantity number (3) not null,
-total Number(10) not null,
+total number(10) not null,
 primary key(customer_id, product_id)    
 );

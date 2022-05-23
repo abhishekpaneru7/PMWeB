@@ -16,11 +16,11 @@
                 <label for="ShopType" class="forms-label">Shop Type</label>
                 <select name="ShopType" class="forms-control">
                     <option value="">Select Shop Type</option>
-                    <option value="sample1" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample1' ? 'selected' : ''; ?>>sample1</option>
-                    <option value="sample2" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample2' ? 'selected' : ''; ?>>sample2</option>
-                    <option value="sample3" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample3' ? 'selected' : ''; ?>>sample3</option>
-                    <option value="sample4" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample4' ? 'selected' : ''; ?>>sample4</option>
-                    <option value="sample5" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample5' ? 'selected' : ''; ?>>sample5</option>
+                    <option value="sample1" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample1' ? 'selected' : ''; ?>>Butcher</option>
+                    <option value="sample2" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample2' ? 'selected' : ''; ?>>Bakery</option>
+                    <option value="sample3" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample3' ? 'selected' : ''; ?>>Fishmonger</option>
+                    <option value="sample4" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample4' ? 'selected' : ''; ?>>Greengrocher</option>
+                    <option value="sample5" <?php echo isset($_POST['ShopType']) && $_POST['ShopType'] === 'sample5' ? 'selected' : ''; ?>>Dellicatessen</option>
                 </select>
                 <label for="Password" class="forms-label">Password</label>
                 <input type="password" name="txtPassword" class="forms-control">
