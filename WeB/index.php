@@ -65,7 +65,7 @@
 </div>  
   </div>
   <div class="container">
-  <h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>;
+  <h1 class="text-center pb-5 mt-4">Highest Rated Products</h1>
   <div class="col-12 mx-auto">
   <div class="row">
   <?php
