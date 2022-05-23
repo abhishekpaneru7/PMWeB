@@ -14,6 +14,7 @@
         echo "</script>";
         }
     else{
+        $id = $_SESSION['id'];
 ?>
     <div class="cart-page" style="border: 2px solid black;">
         <h1 class="text-center">My Cart</h1>
@@ -27,12 +28,22 @@
                         <th>Total</th>
                         <th></th>
                     </tr>
+                        <?php
+                            $sql = "Select * from cart c, product p where p.product_id = c.product_id and customer_id = $id";
+                            $result = oci_parse($connection, $sql);
+                            oci_execute($result);
+                            while($row = oci_fetch_assoc($result)){
+                                $pid = $row['PRODUCT_ID'];
+                                echo '<tr>';
+                                echo '<td><img src="./products/' . $row['IMAGE'] . '" height="100px"</td>';
+                                echo '<td>' . $row['PRODUCT_TITLE'] . '</td>';
+                                echo '<td>' . $row['QUANTITY'] . '</td>';
+                                echo '<td>' . $row['TOTAL'] . '</td>';
+                                echo "<td><a href=\"./include/deletecartproduct.php?id=$pid\" class=\"btn btn-danger btn-card\"><i class=\"fas fa-trash\"></i></a></td>";
+                                echo '</tr>';
+                            }
+                        ?>
                     <tr>
-                        <td>Food</td>
-                        <td>55</td>
-                        <td>2</td>
-                        <td>110</td>
-                        <td><a href="" class="btn btn-danger btn-card"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 </table>
             </div>
