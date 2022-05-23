@@ -62,7 +62,7 @@ INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, STO
 INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, STOCK_QUANTITY, IMAGE, SHOP_ID, Rating) VALUES('19','BANANA','FRUIT','A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus musa. In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas. ','1','40','banana.jpg','4',NULL);
 
 --AVOCADO
-INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, STOCK_QUANTITY, IMAGE, SHOP_ID, Rating) VALUES('20','AVOCADO','FRUIT','The avocado is a tree originating in the americas which is likely native to the highland regions of south-central mexico to guatemala. It is classified as a member of the flowering plant family lauraceae. ','2.94','40','avocado.jpg','4','5',NULL);
+INSERT INTO PRODUCT(PRODUCT_ID, PRODUCT_TITLE, CATEGORY, DESCRIPTION, PRICE, STOCK_QUANTITY, IMAGE, SHOP_ID, Rating) VALUES('20','AVOCADO','FRUIT','The avocado is a tree originating in the americas which is likely native to the highland regions of south-central mexico to guatemala. It is classified as a member of the flowering plant family lauraceae. ','2.94','40','avocado.jpg','4','5');
 
 --FISHMONGER
 --SALMON
