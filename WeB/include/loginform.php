@@ -13,7 +13,7 @@
                     <option value="Trader">Trader</option>
                 </select><br>
                 <input type="submit" value="Login" name="loginBtn"><br>
-                <a href="#" style="color:grey; text-decoration:none;">Forgot Password?</a><br><br><br>
+                <a href="forgotpwform.php" style="color:grey; text-decoration:none;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='grey'">Forgot Password?</a><br><br><br>
                 <p style="color:grey; display:inline;">Not registered yet?</p>
                 <a href="./signupcustomer.php" style="text-decoration:none;">Signup now</a><br><br>
             </div>
@@ -24,24 +24,6 @@
 <?php
 include 'connection.php';
 
-// include 'connection.php';
-//     if(isset($_POST['loginBtn'])){
-//         $email = $_POST['txtEmail'];
-//         $password = $_POST['txtPassword'];
-//         $user = $_POST['users'];
-//         $sql = "SELECT * FROM $user where EMAIL = '$email' AND PASSWORD = '$password'";       
-//         $result = oci_parse($connection, $sql);
-//         oci_execute($result);
-//         if($row = oci_fetch_assoc($result)){
-//             $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-//             // header('location: ./index.php');
-//             echo("<script>location.href='./cart.php'</script>");
-//         }else{
-//             $_SESSION['error'] = '<script>alert("User not recognized")</script>';
-//             echo $_SESSION['error'];
-//         }
-
-//     }
 if(isset($_POST['loginBtn'])){
     $email = $_POST['txtEmail'];
     $password = $_POST['txtPassword'];
@@ -58,7 +40,7 @@ if(isset($_POST['loginBtn'])){
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
         // header('location: ./index.php');
         echo "<script>alert(\"Logged in Successfully.\");";
-        echo "window.location.href=\"./cart.php\"";
+        echo "window.location.href=\"./index.php\"";
         echo "</script>";
     }else{
         $_SESSION['error'] = '<script>alert("User not recognized")</script>';
@@ -66,7 +48,7 @@ if(isset($_POST['loginBtn'])){
     }
     }
     else{
-        $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password'";      
+        $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password' AND STATUS = 'Active'";      
     
        $result = oci_parse($connection, $sql);
     oci_execute($result);
