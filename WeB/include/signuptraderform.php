@@ -16,11 +16,11 @@
                 <label for="TraderType" class="forms-label">Shop Type</label>
                 <select name="TraderType" class="forms-control">
                     <option value="">Select Shop Type</option>
-                    <option value="Butcher" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Butcher' ? 'selected' : ''; ?>>Butcher</option>
-                    <option value="Bakery" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Bakery' ? 'selected' : ''; ?>>Bakery</option>
-                    <option value="Fishmonger" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Fishmonger' ? 'selected' : ''; ?>>Fishmonger</option>
-                    <option value="Greengrocher" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Greengrocher' ? 'selected' : ''; ?>>Greengrocher</option>
-                    <option value="Dellicatessen" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === 'Dellicatessen' ? 'selected' : ''; ?>>Dellicatessen</option>
+                    <option value="1" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === '1' ? 'selected' : ''; ?>>Butcher</option>
+                    <option value="2" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === '2' ? 'selected' : ''; ?>>Bakery</option>
+                    <option value="3" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === '3' ? 'selected' : ''; ?>>Fishmonger</option>
+                    <option value="4" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === '4' ? 'selected' : ''; ?>>Greengrocher</option>
+                    <option value="5" <?php echo isset($_POST['TraderType']) && $_POST['TraderType'] === '5' ? 'selected' : ''; ?>>Dellicatessen</option>
                 </select>
                 <label for="Password" class="forms-label">Password</label>
                 <input type="password" name="txtPassword" class="forms-control">
@@ -40,9 +40,10 @@
     $lastname = "";
     $email = "";
     $shopname = "";
-    $shoptype = "";
+    $shopid = "";
     $password = "";
     $confpassword = "";
+    $status = "pending";
     if(isset($_POST['registerBtn'])){
         if(!empty($_POST['txtFirstName'])){
             $firstname = $_POST['txtFirstName'];
@@ -62,7 +63,7 @@
                         if(!empty($_POST['txtShopName'])){
                             $shopname = $_POST['txtShopName'];
                             if(!empty($_POST['TraderType'])){
-                                $tradertype = $_POST['TraderType'];
+                                $shopid = $_POST['TraderType'];
                                 if(!empty($_POST['txtPassword'])){
                                     $password = $_POST['txtPassword'];
                                     if(preg_match('/[a-z]/',$password) && preg_match('/[A-Z]/',$password) && preg_match('/[0-9]/',$password)){
@@ -71,10 +72,13 @@
                                             if($password === $confpassword){
                                                 if(!empty($_POST['termsCond'])){
 
-                                                    $sql = "insert into trader(trader_id, first_name, last_name, email, shop_name, shop_type, password) values(null, '$firstname', '$lastname', '$email', '$shopname','$shoptype','$password')";
-
+                                                    $sql = "insert into trader(trader_id, first_name, last_name, email, shop_name, password, shop_id, status) values(null, '$firstname', '$lastname', '$email', '$shopname','$password', $shopid, '$status')";
                                                     $query = oci_parse($connection, $sql);
+                                                    echo $sql;
                                                     oci_execute($query);
+                                                    echo "<script>alert(\"Request Send Account now pending.\");";
+                                                    echo "window.location.href=\"./index.php\"";
+                                                    echo "</script>";
                                                 }else{
                                                     echo "<script>alert(\"please agree to terms & condition.\")</script>";
                                                 }
