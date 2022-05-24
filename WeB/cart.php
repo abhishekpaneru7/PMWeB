@@ -34,7 +34,6 @@
                             $result = oci_parse($connection, $sql);
                             oci_execute($result);
                             while($row = oci_fetch_assoc($result)){
-                                $count = 0;
                                 $pid = $row['PRODUCT_ID'];
                                 echo '<tr>';
                                 echo '<td><img src="./products/' . $row['IMAGE'] . '" height="100px"</td>';

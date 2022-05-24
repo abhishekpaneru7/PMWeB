@@ -5,7 +5,6 @@
     $sql = "Select * from CUSTOMER where CUSTOMER_ID = $id";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
-    $table = "customer";
     $firstname = "";
     $lastname = "";
     $email = "";
@@ -22,7 +21,7 @@
 <head>
 </head>
 <body>
-    <form action="./include/updateprofile.php" method="post" class="forms">
+    <form action="./include/customerupdateprofile.php" method="post" class="forms">
         <fieldset class="border rounded-3 p-3 mt-4">
             <legend class="float-none w-auto px-3"><h1>Customer Profile</h1></legend>
             <div class="forms-content">
