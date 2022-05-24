@@ -50,7 +50,7 @@ if(isset($_POST['loginBtn'])){
     else{
         $sql = "SELECT * FROM TRADER where EMAIL = '$email' AND PASSWORD = '$password' AND STATUS = 'Active'";      
     
-       $result = oci_parse($connection, $sql);
+        $result = oci_parse($connection, $sql);
     oci_execute($result);
     if($row = oci_fetch_assoc($result)){
         $_SESSION['id'] = $row['TRADER_ID'];

@@ -13,8 +13,8 @@
     <br>
     <div class="product-detail">
         <?php
-            $id = $_GET['id'];
-            $sql = "Select * from product where PRODUCT_ID = $id";
+            $prodid = $_GET['id'];
+            $sql = "Select * from product where PRODUCT_ID = $prodid";
             $result = oci_parse($connection, $sql);
             oci_execute($result);
             while($row = oci_fetch_assoc($result)){
@@ -30,7 +30,7 @@
                         include './include/rating.php';
                         echo '<h5>' . $row['STOCK_QUANTITY'] .'<br> REMAINING IN STOCK</h5>';
                         echo '<div class="flex-items">';
-                            echo "<a href=\"cart.php?id=$id\" class=\"btn btn-primary\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
+                            echo "<a href=\"./include/addtocart.php?id=$prodid\" class=\"btn btn-primary\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
                             echo '<a href="" class="btn btn-danger">Buy Now</a>';
                         echo '</div>';
                     echo '</div><br>';
