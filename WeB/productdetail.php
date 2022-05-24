@@ -31,7 +31,7 @@
                         echo '<h5>' . $row['STOCK_QUANTITY'] .'<br> REMAINING IN STOCK</h5>';
                         echo '<div class="flex-items">';
                             echo "<a href=\"./include/addtocart.php?id=$prodid\" class=\"btn btn-primary\">Add to Cart <i class=\"fas fa-shopping-cart\"></i></a>&nbsp;";
-                            echo '<a href="" class="btn btn-danger">Buy Now</a>';
+                            // echo '<a href="" class="btn btn-danger">Buy Now</a>';
                         echo '</div>';
                     echo '</div><br>';
                 echo '</div><br>';
