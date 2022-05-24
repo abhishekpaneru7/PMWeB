@@ -29,6 +29,7 @@ CREATE TABLE TRADER(
     email VARCHAR2(50) not null,
     shop_name VARCHAR2(50) not null,
     password VARCHAR2(50) not null,
+    status VARCHAR2(10) not null,
     shop_id NUMBER(10) REFERENCES SHOP(shop_id)
 );
 
