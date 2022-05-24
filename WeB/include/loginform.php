@@ -57,7 +57,9 @@ if(isset($_POST['loginBtn'])){
         $_SESSION['id'] = $row['CUSTOMER_ID'];
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
         // header('location: ./index.php');
-        echo("<script>location.href='./cart.php'</script>");
+        echo "<script>alert(\"Logged in Successfully.\");";
+        echo "window.location.href=\"./cart.php\"";
+        echo "</script>";
     }else{
         $_SESSION['error'] = '<script>alert("User not recognized")</script>';
         echo $_SESSION['error'];
@@ -72,7 +74,9 @@ if(isset($_POST['loginBtn'])){
         $_SESSION['trader_id'] = $row['TRADER_ID'];
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
         // header('location: ./index.php');
-        echo("<script>location.href='./index.php'</script>");
+        echo "<script>alert(\"Logged in Successfully.\");";
+        echo "window.location.href=\"./index.php\"";
+        echo "</script>";
     }
     else{
         $_SESSION['error'] = '<script>alert("User not recognized")</script>';
