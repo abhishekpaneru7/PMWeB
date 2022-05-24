@@ -13,7 +13,7 @@
                     <option value="Trader">Trader</option>
                 </select><br>
                 <input type="submit" value="Login" name="loginBtn"><br>
-                <a href="#" style="color:grey; text-decoration:none;">Forgot Password?</a><br><br><br>
+                <a href="forgotpwform.php" style="color:grey; text-decoration:none;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='grey'">Forgot Password?</a><br><br><br>
                 <p style="color:grey; display:inline;">Not registered yet?</p>
                 <a href="./signupcustomer.php" style="text-decoration:none;">Signup now</a><br><br>
             </div>
