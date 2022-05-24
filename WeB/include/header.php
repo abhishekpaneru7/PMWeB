@@ -49,10 +49,13 @@
               &nbsp;
               <?php }
                 else{?>
+                <li class="nav-item">
+                <a class="nav-link btn btn-dark btn-nav" aria-current="page" href="traderPandC.php" style="color: white; margin-right: %;" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Products</a>
+              </li>
+              &nbsp;
                 <a href="profiletraderform.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'"><i class="bi bi-person"></i></a>
               &nbsp;
                 <?php } ?>
-                &nbsp;
                 <a href="signout.php" class="btn btn-dark btn-nav text-center" onMouseOver="this.style.color='#E09C78'" onMouseOut="this.style.color='white'">Sign Out</a>
               <?php }?>
             
