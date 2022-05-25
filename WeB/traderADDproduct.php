@@ -22,7 +22,7 @@
                         <a href="">Reports</a>
                         <br>
                         <br>
-                        <a href="">Profile</a>
+                        <a href="profiletraderform.php">Profile</a>
                         <br>
                         <br>
                         <a href="" class="btn btn-danger btn-card">Sign Out</a>
@@ -36,7 +36,8 @@
                         <a href="" class="btn btn-danger btn-card">Delete All Products</a>
                     </div>
                     <div class="col-10 mx-auto">
-                        <div class="row text-center">  
+                        <div class="row text-center"> 
+                        <h2>Add Product</h2> 
                             <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 40rem;">
                                 <div class="card-body">
                                     <h5 class="card-title">Product Details</h5>
