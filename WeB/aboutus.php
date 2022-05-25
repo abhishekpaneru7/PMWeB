@@ -21,46 +21,46 @@
       <div class="col-10 mx-auto">
       <div class="row">
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/Pravat.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
-        <h5 class="card-text">Role</h5>
+        <h5 class="card-title">Pravat Lama</h5>
+        <h5 class="card-text">Team Leader </h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/Sakchyam.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
-        <h5 class="card-text">Role</h5>
+        <h5 class="card-title">Sakchyam Shrestha</h5>
+        <h5 class="card-text">Documentation Manager</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/Preeti.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
-        <h5 class="card-text">Role</h5>
+        <h5 class="card-title">Preeti Shrestha</h5>
+        <h5 class="card-text">Team Coordinator</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top mot" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/Abhishek.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-        <h5 class="card-title">Food</h5>
-        <h5 class="card-text">Role</h5>
+        <h5 class="card-title">Abhishek Paneru</h5>
+        <h5 class="card-text">Frontend Developer</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto mot" style="width: 18rem;">
-      <img class="card-img-top" src="img/pih.png" alt="Card image cap" height="60%">
+      <img class="card-img-top" src="img/Bipina.jpg" alt="Card image cap" height="60%">
       <div class="card-body">
-      <h5 class="card-title">Food</h5>
-        <h5 class="card-text">Role</h5>
+      <h5 class="card-title">Bipina Lammichane</h5>
+        <h5 class="card-text">Resource Manager</h5>
         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum culpa autem dolores eaque sapiente ad.</p>
         <a href="#" class="btn btn-primary text-center btn-card">Contact Us</a>
       </div>
