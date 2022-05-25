@@ -27,7 +27,7 @@ textarea {
 }
 .abt-bg {
   background-image: url("../img/bg3.jpg");
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cont-bg {
   background-image: url("../img/bg4.jpg");

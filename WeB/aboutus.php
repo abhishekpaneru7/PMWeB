@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="card  col-lg-3 py-2 m-2 mx-auto" style="width: 18rem;">
-      <img class="card-img-top mot" src="img/Preeti.jpg" alt="Card image cap" height="60%">
+      <img class="card-img-top mot" src="img/Preeti.png" alt="Card image cap" height="60%">
       <div class="card-body">
         <h5 class="card-title">Preeti Shrestha</h5>
         <h5 class="card-text">Team Coordinator</h5>
