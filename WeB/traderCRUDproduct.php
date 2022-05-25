@@ -22,7 +22,7 @@
                         <a href="">Reports</a>
                         <br>
                         <br>
-                        <a href="">Profile</a>
+                        <a href="profiletraderform.php">Profile</a>
                         <br>
                         <br>
                         <a href="" class="btn btn-danger btn-card">Sign Out</a>
