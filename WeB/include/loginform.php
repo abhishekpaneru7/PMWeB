@@ -38,7 +38,6 @@ if(isset($_POST['loginBtn'])){
     if($row = oci_fetch_assoc($result)){
         $_SESSION['id'] = $row['CUSTOMER_ID'];
         $_SESSION['users'] = "SELECT FIRST_NAME FROM $user WHERE EMAIL = '$email' AND PASSWORD = '$password'";
-        // header('location: ./index.php');
         echo "<script>alert(\"Logged in Successfully.\");";
         echo "window.location.href=\"./index.php\"";
         echo "</script>";
