@@ -1,9 +1,10 @@
 <?php 
-include './include/connection.php';
-$firstname = $GET['txtFirstName'];
-echo "$firstname";
+include 'include/connection.php';
+
+$fname=$_GET['txtFirstName'];
+echo $fname;
 echo "Trader Activated";
-$stid = "UPDATE TRADER SET STATUS='Active' where first_name='$firstname'";
+$stid = "UPDATE TRADER SET status='Active' where FIRST_NAME ='$fname'";
 $query=oci_parse($connection, $stid);
 oci_execute($query);
 ?>
