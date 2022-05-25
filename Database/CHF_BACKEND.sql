@@ -7,10 +7,6 @@ DROP TABLE COLLECTIONSLOT CASCADE CONSTRAINTS;
 DROP TABLE ORDER CASCADE CONSTRAINTS;
 DROP TABLE PAYMENT CASCADE CONSTRAINTS;
 
-
-
-
-
 Create table customer (
     customer_id number(5) primary key,
     first_name VARCHAR2(50) not null,
