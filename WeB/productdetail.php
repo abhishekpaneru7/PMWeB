@@ -39,6 +39,7 @@
             }
         ?>
     </div>
+    <form action=<?php echo "\"productdetail.php?id=$prodid\" method=\"post\"";?>>
     <div class="product-detail">
         <div class="rate-product">
             <div class="rating">
@@ -55,12 +56,23 @@
                 <input id="radio5" type="radio" name="star" value="1" class="star" />
                 <label for="radio5">&#9733;</label>
             </div>
-            <br>
             <div class="rate-comment container mx-auto text-center">
                 <textarea name="ratecomment" class="text-center" style="resize: none;" cols="150" rows="2" placeholder="Comment Here!"></textarea>
                 <div class="submit-btn mx-auto text-center">
-                    <input type="submit" class="btn btn-danger text-white" for="ratecomment">
+                    <input type="submit" class="btn btn-danger text-white" for="ratecomment" name="reviewBtn">
                 </div>
+            </div>
+            </form>
+            <br>
+                <?php
+                    if(isset($_POST['reviewBtn'])){
+                        $rating = $_POST['star'];
+                        $comment = $_POST['ratecomment'];
+                        $query = "insert into REVIEW(REVIEW_ID, REVIEW_COMMENT, RATING, PRODUCT_ID, CUSTOMER_ID) values(null, '$comment', '$rating', $prodid, $id)";
+                        $insert = oci_parse($connection, $query);
+                        oci_execute($insert);
+                    }
+                ?>
                 <?php
                     $sql = "SELECT * FROM REVIEW r, CUSTOMER c where c.CUSTOMER_ID = r.CUSTOMER_ID and r.PRODUCT_ID = $prodid";
                     $result = oci_parse($connection, $sql);
@@ -83,7 +95,6 @@
                         echo "</div>";
                     }
                 ?>
-            </div>
         </div>
     </div>
     <script>
