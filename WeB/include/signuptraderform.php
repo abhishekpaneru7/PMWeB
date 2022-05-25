@@ -74,11 +74,31 @@
 
                                                     $sql = "insert into trader(trader_id, first_name, last_name, email, shop_name, password, shop_id, status) values(null, '$firstname', '$lastname', '$email', '$shopname','$password', $shopid, '$status')";
                                                     $query = oci_parse($connection, $sql);
-                                                    echo $sql;
-                                                    oci_execute($query);
-                                                    echo "<script>alert(\"Request Send Account now pending.\");";
-                                                    echo "window.location.href=\"./index.php\"";
-                                                    echo "</script>";
+                                                    // echo $sql;
+                                                    
+                //email verification                                    
+                if (oci_execute($query)){
+                $sender= $email;
+                $to="chflocalmart@gmail.com";
+                $subject ="Trader Activation Email";
+                $message ="<h2>Click <a href='\"./verifyTrader.php?first_name=$firstname\"'>Activate</a> to approve Trader </h2>";
+                $headers = "From: CHFLOCALMART  <" . $sender . ">\n" ;
+                $headers .= "MIME-Version: 1.0\n";
+                $headers .= "Content-type: text/html; charset=utf-8\n";
+                $headers .= "Return-Path: " . $sender . "\n";
+                $headers .= "X-Mailer: PHP/" . phpversion();
+
+                if(mail($to,$subject,$message, $headers))
+                {
+                    echo "<script>alert(\"Request Send Account now pending.\");";
+                    echo "window.location.href=\"./index.php\"";
+                    echo "</script>";
+                }
+                else{
+                    echo "<script>alert(\"Unable to send Email.\");";
+                }
+            }
+   
                                                 }else{
                                                     echo "<script>alert(\"please agree to terms & condition.\")</script>";
                                                 }
