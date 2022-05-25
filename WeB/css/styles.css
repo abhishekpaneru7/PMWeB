@@ -785,3 +785,6 @@ div.card.mot {
 div.card.mot {
   opacity: 1;
 }
+div.c-s-btn a.btn.btn-cs{
+  margin: 2px 12px;
+}
