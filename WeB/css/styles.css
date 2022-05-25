@@ -817,3 +817,8 @@ div.c-s-btn a.btn.btn-cs{
    display: flex;
    justify-content: space-around;
  }
+
+ .pl-us{
+   border: none;
+   background: none;
+ }
