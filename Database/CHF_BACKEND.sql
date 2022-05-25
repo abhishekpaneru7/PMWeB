@@ -3,6 +3,11 @@ DROP TABLE TRADER CASCADE CONSTRAINTS;
 DROP TABLE PRODUCT CASCADE CONSTRAINTS;
 DROP TABLE SHOP CASCADE CONSTRAINTS;
 DROP TABLE CART CASCADE CONSTRAINTS;
+DROP TABLE COLLECTIONSLOT CASCADE CONSTRAINTS;
+DROP TABLE ORDER CASCADE CONSTRAINTS;
+DROP TABLE PAYMENT CASCADE CONSTRAINTS;
+
+
 
 
 
@@ -52,6 +57,30 @@ CREATE TABLE CART(
 customer_id number(5) REFERENCES customer (customer_id),
 product_id number (5) REFERENCES product (product_id),
 quantity number (3) not null,
-total number(10) not null,
+total number(5,2) not null,
 primary key(customer_id, product_id)    
 );
+
+CREATE TABLE COLLECTIONSLOT(
+slot_id number(10) primary key,
+day varchar2(10),
+collectiontime varchar(20),
+week_count varchar2(20),
+number_of_orders number(10)
+);
+
+CREATE TABLE ORDERDETAIL(
+    order_id number (5) primary key,
+    customer_id number(5) REFERENCES customer (customer_id),
+    product_id number (5) REFERENCES product (product_id),
+    slot_id number(10) REFERENCES collectionslot (slot_id)
+);
+
+CREATE TABLE PAYMENT(
+    payment_id number(10) primary key,    
+    customer_id number(10) references customer(Customer_id),
+    product_id number (5) REFERENCES product (product_id),
+    Order_id number(10) references orderdetail (order_id),
+    paiddate timestamp(1)
+);
+
