@@ -788,3 +788,32 @@ div.card.mot {
 div.c-s-btn a.btn.btn-cs{
   margin: 2px 12px;
 }
+
+/* INVOICE
+ */
+ .inv-con{
+   border: 2px solid black;
+   margin: 20px;
+   padding: 10px;
+ }
+ .inv-flex{
+   display: flex;
+   justify-content: space-between;
+ }
+ .inv-top-left{
+   border: 2px solid red;
+ }
+ .inv-top-right{
+   border: 2px solid red;
+ }
+ .inv-bot-right{
+   width: 20rem;
+   margin: auto;
+ }
+ .inv-foot{
+   text-decoration: none;
+ }
+ .inv-foot-flex{
+   display: flex;
+   justify-content: space-around;
+ }
