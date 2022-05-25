@@ -36,7 +36,8 @@
                         <a href="" class="btn btn-danger btn-card">Delete All Products</a>
                     </div>
                     <div class="col-10 mx-auto">
-                        <div class="row text-center"> 
+                        <div class="row text-center">
+                        <h2>Update Product</h2> 
                             <?php
                                 $sql1 = "Select * from product where product_title = '$title'";
                                 $result1 = oci_parse($connection, $sql1);
