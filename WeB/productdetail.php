@@ -13,6 +13,7 @@
     <br>
     <div class="product-detail">
         <?php
+            $id = $_SESSION['id'];
             $prodid = $_GET['id'];
             $sql = "Select * from product where PRODUCT_ID = $prodid";
             $result = oci_parse($connection, $sql);
@@ -60,33 +61,28 @@
                 <div class="submit-btn mx-auto text-center">
                     <input type="submit" class="btn btn-danger text-white" for="ratecomment">
                 </div>
-                <div class="rate-c-v">
-                    <h4>By: AAA(Customer)</h4>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore assumenda commodi ea officiis atque?</p>
-                </div>
-                <div class="rate-c-v">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <h4>By: AAA(Customer)</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore assumenda commodi ea officiis atque?</p>
-                </div>
-                <div class="rate-c-v">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <h4>By: AAA(Customer)</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore assumenda commodi ea officiis atque?</p>
-                </div>
+                <?php
+                    $sql = "SELECT * FROM REVIEW r, CUSTOMER c where c.CUSTOMER_ID = r.CUSTOMER_ID and r.PRODUCT_ID = $prodid";
+                    $result = oci_parse($connection, $sql);
+                    oci_execute($result);
+                    while($row = oci_fetch_assoc($result)){
+                        $name = $row['FIRST_NAME'] . " " . $row['LAST_NAME'];
+                        $rating = $row['RATING'];
+                        $comment = $row['REVIEW_COMMENT'];
+                        echo '<div class="rate-c-v">';
+                        echo '<h4>By: ' . $name . '</h4>';
+                        for($i = 0; $i < 5; $i++){
+                            if($rating > 0){
+                                echo '<span class="fa fa-star checked"></span>';
+                                $rating--;
+                            }elseif($rating == 0){
+                                echo '<span class="fa fa-star"></span>';
+                            }
+                        }
+                        echo "<p>$comment</p>";
+                        echo "</div>";
+                    }
+                ?>
             </div>
         </div>
     </div>
