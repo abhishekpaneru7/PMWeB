@@ -1,7 +1,6 @@
 <?php 
 include 'include/connection.php';
-
-$fname=$_GET['txtFirstName'];
+$fname=$_GET['fname'];
 echo $fname;
 echo "Trader Activated";
 $stid = "UPDATE TRADER SET status='Active' where FIRST_NAME ='$fname'";

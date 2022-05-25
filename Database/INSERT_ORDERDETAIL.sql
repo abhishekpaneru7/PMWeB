@@ -1,0 +1,10 @@
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('1', '1','4','completed','1');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('2', '8','24','incomplete','2');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('3', '6','14','completed','3');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('4', '12','4','completed','4');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('5', '17','5','incomplete','5');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('6', '2','9','incomplete','6');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('7', '23','3','completed','7');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('8', '22','16','completed','8');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('9', '13','22','completed','9');
+INSERT INTO ORDERDETAIL (order_id, customer_id, product_id , status , slot_id ) VALUES ('10', '6','27','incomplete','10');

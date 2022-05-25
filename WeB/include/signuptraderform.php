@@ -81,7 +81,7 @@
                 $sender= $email;
                 $to="chflocalmart@gmail.com";
                 $subject ="Trader Activation Email";
-                $message ="<h2>Click <a href='http://localhost/pm/PMWeB/WeB/verifyTrader.php?FIRST_NAME=$firstname'>Activate</a> to approve Trader </h2> ";
+                $message ="<h2>Click <a href='http://localhost/pm/PMWeB/WeB/verifyTrader.php?fname=$firstname'>Activate</a> to approve Trader </h2> ";
                 $headers = "From: CHFLOCALMART  <" . $sender . ">\n" ;
                 $headers .= "MIME-Version: 1.0\n";
                 $headers .= "Content-type: text/html; charset=utf-8\n";

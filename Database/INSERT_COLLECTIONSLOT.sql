@@ -1,0 +1,10 @@
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (1,'Wednesday','10 AM to 1 PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES	(2,'Wednesday','1 PM to 4PM','Next Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (3,'Wednesday','1 PM to 4PM','Next Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (4,'Thursday','4PM to 7PM','Next Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (5,'Thursday','10 AM to 1 PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (6,'Thursday','4PM to 7PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (7,'Friday','4PM to 7PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (8,'Friday','4PM to 7PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (9,'Friday','10 AM to 1 PM','This Week','');
+INSERT INTO COLLECTIONSLOT (slot_id, day, collectiontime, week_count, number_of_orders) VALUES (10,'Wednesday','1 PM to 4PM','Next Week','');
