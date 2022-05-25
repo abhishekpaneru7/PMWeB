@@ -560,13 +560,13 @@ td {
 
 /* FAQs */
 .faq-con {
-  border: 2px solid black;
+  border: 2px solid purple;
 }
 .faq-qa {
   text-align: center;
   margin: 5% 15% 5% 15%;
   padding: 1% 1% 1% 1%;
-  border: 2px solid red;
+  border: 1px solid purple;
 }
 .faq-qa p {
   text-align: center;
