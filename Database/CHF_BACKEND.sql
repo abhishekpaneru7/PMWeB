@@ -92,11 +92,12 @@ product_id number(30) not null references product (product_id)
 );
 
 
+
 CREATE TABLE PAYMENT(
     payment_id number(10) primary key,    
     customer_id number(10) references customer(Customer_id),
     product_id number (5) REFERENCES product (product_id),
-    Order_id number(10) references orderdetail (order_id),
+    order_id number(10) references orderdetail (order_id),
     paiddate timestamp(1)
 );
 
