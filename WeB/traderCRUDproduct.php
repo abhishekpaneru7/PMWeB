@@ -1,6 +1,6 @@
 <?php
     include "include/header.php";
-    $proid = $_GET['id'];
+    $title = $_GET['title'];
     $sql = "Select * from trader";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
@@ -38,7 +38,7 @@
                     <div class="col-10 mx-auto">
                         <div class="row text-center"> 
                             <?php
-                                $sql1 = "Select * from product where product_id = $proid";
+                                $sql1 = "Select * from product where product_title = '$title'";
                                 $result1 = oci_parse($connection, $sql1);
                                 oci_execute($result1);
                                 while($row = oci_fetch_assoc($result1)){

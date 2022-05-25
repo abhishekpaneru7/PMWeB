@@ -43,7 +43,7 @@
                                 $result1 = oci_parse($connection, $sql1);
                                 oci_execute($result1);
                                 while($row = oci_fetch_assoc($result1)){
-                                    $proid = $row['PRODUCT_ID'];
+                                    $title = $row['PRODUCT_TITLE'];
                                     echo '<div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">';
                                         echo '<img class="card-img-top" src="products/' . $row['IMAGE'] . '" alt="Card image cap">';
                                         echo '<div class="card-body">';
@@ -54,9 +54,9 @@
                                             echo '<h5 class="card-text">Stock Available: ' . $row['STOCK_QUANTITY'] . '</h5>';
                                         echo '</div>';
                                         echo '<div class="flex-search mx-auto">';
-                                            echo "<a href=\"./traderCRUDproduct.php?id=$proid\" class=\"btn btn-primary btn-card\">Update</a>
+                                            echo "<a href=\"./traderCRUDproduct.php?title=$title\" class=\"btn btn-primary btn-card\">Update</a>
                                             &nbsp;";
-                                            echo "<a href=\"./traderDeleteProduct.php?id=$proid\" class=\"btn btn-danger btn-card\">Delete</a>";
+                                            echo "<a href=\"./traderDeleteProduct.php?title=$title\" class=\"btn btn-danger btn-card\">Delete</a>";
                                         echo '</div>';
                                     echo '</div>';
                                 }
