@@ -220,8 +220,32 @@
                 </ul>
             </div>
             <div class="faq-qa">
-                <h1 class="text-u">Trader Benifits</h1>
-                <p></p>
+                <h1 class="text-u">Trader Benefits</h1>
+                <p>Last updated: May 20, 2022</p>
+                <p>Thank you for choosing us at CHF Local's Mart.</p>
+                <p>If you are here to inquire about the benefits that we as a company give provide to the traders that are associated with us .</p>
+                <p>The following terms are applicable each and any trader that are associated with us.</p>
+                <h1 class="text-u">Company Benefits</h1>
+                <p>You are entitled all the listed benefits(with T&C) that the company offers to all its traders. </p>
+                <p>A simple and fast dashboard for listing and managing products. </p>
+                <p>Any time support from out Support Department for any queries that you may have. You can reach out to them through:</p>
+                <ul>
+                <li>By email: chflocalmart@gmail.com</li>
+                </ul>
+                <h1 class="text-u">Trade Benefits</h1>
+                <p>Trader benefits that we provide to our traders.</p>
+                <ul>
+                <li>0% Marketing Fee</li>
+                <li>Daily, Weekly, Monthly Reports of their respective products. </li>
+                <li>Weekly Payment</li>
+                <li>Financial Support provided by the company</li>
+                <li>Business Support and Ecommerce Trainings</li>
+                </ul>
+                <h1 class="text-u">Contact Us</h1>
+                <p>If you have any questions about our Trader Benefits, please contact us:</p>
+                <ul>
+                <li id="TB">By email: chflocalmart@gmail.com</li>
+
             </div>
     </div>
     <?php include "include/footer.php" ?>
