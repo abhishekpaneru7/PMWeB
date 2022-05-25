@@ -42,7 +42,7 @@
                     <input type="radio" name="rdoGender" value="F" class="radio" <?php echo ($gender == 'F') ? "checked = checked" : ''; ?>> <span class="radio">Female</span>
                     <input type="radio" name="rdoGender" value="O" class="radio" <?php echo ($gender == 'O') ? "checked = checked" : ''; ?>> <span class="radio">Other</span>
                 </section><br><br>
-                <a href="" class="forms-control">Click Here to Change Password</a><br><br>
+                <a href="forgotpwform.php" class="forms-control">Click Here to Change Password</a><br><br>
                 <input type="submit" value="Update Profile" name="custUpdtBtn"><br>
             </div>
         </fieldset>
