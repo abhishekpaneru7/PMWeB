@@ -9,7 +9,7 @@
 <?php 
       include "include/header.php"; 
       if (empty($_SESSION['users'])){
-        echo"<script>alert(\"Please Login to your account.\");";
+        echo"<script>alert(\"Please Login to your account to access cart.\");";
             echo "window.location.href=\"./login.php\";";
         echo "</script>";
         }

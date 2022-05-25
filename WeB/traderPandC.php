@@ -1,15 +1,23 @@
 <?php
     include "include/header.php";
+    $id = $_SESSION['id'];
+    // $sql = "Select * from trader t, product p where t.shop_id = p.shop_id and t.trader_id = $id";
+    $sql = "Select * from trader t";
+    $result = oci_parse($connection, $sql);
+    oci_execute($result);
+    while($row = oci_fetch_assoc($result)){
+        $trader = $row['FIRST_NAME'] . " " . $row['LAST_NAME'];
+        $shop = $row['SHOP_NAME'];
+    }
 ?>
     <div class="search-bar">
         <div class="flex-search">
             <div class="side-cat-search">
-                <h2>Trader Name</h2>
-                <p class="text-center">Trader Role</p>
-                <p class="text-center">Trader Shop</p>
+                <h2><?php echo $trader; ?></h2>
+                <p class="text-center"><?php echo $shop; ?></p>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 180px; background-color: #7c4dff; height: 2px">
                     <div class="text-center">
-                        <a href="traderPandC.php">Products</a>
+                        <a href="traderPandC.php">All Products</a>
                         <br>
                         <br>
                         <a href="">Reports</a>
@@ -30,86 +38,29 @@
                     </div>
                     <div class="col-10 mx-auto">
                         <div class="row text-center">  
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                    <h5 class="card-text">Product Type: </h5>
-                                    <h5 class="card-text">Stock Available: </h5>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="traderCRUDproduct.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="productdetail.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="productdetail.php" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="productdetail.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="productdetail.php" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="productdetail.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="productdetail.php" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="productdetail.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="productdetail.php" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
-                            <div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">
-                                <img class="card-img-top" src="img/pih.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rs: 100</h5>
-                                    <h5 class="card-title">Food</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque aspernatur quam repudiandae commodi dolorum!</p>
-                                </div>
-                                <div class="flex-search mx-auto">
-                                    <a href="productdetail.php" class="btn btn-primary btn-card">Update</a>
-                                    &nbsp;
-                                    <a href="productdetail.php" class="btn btn-danger btn-card">Delete</a>
-                                </div>
-                            </div>
+                            <?php
+                                $sql1 = "Select * from trader t, product p where t.shop_id = p.shop_id and t.trader_id = $id";
+                                $result1 = oci_parse($connection, $sql1);
+                                oci_execute($result1);
+                                while($row = oci_fetch_assoc($result1)){
+                                    $proid = $row['PRODUCT_ID'];
+                                    echo '<div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 18rem;">';
+                                        echo '<img class="card-img-top" src="products/' . $row['IMAGE'] . '" alt="Card image cap">';
+                                        echo '<div class="card-body">';
+                                            echo '<h5 class="card-title">£' . $row['PRICE'] . '</h5>';
+                                            echo '<h5 class="card-title">' . $row['PRODUCT_TITLE'] . '</h5>';
+                                            echo '<p class="card-text">' . $row['DESCRIPTION'] . '</p>';
+                                            echo '<h5 class="card-text">Product Type: ' . $row['CATEGORY'] . '</h5>';
+                                            echo '<h5 class="card-text">Stock Available: ' . $row['STOCK_QUANTITY'] . '</h5>';
+                                        echo '</div>';
+                                        echo '<div class="flex-search mx-auto">';
+                                            echo "<a href=\"./traderCRUDproduct.php?id=$proid\" class=\"btn btn-primary btn-card\">Update</a>
+                                            &nbsp;";
+                                            echo "<a href=\"./traderDeleteProduct.php?id=$proid\" class=\"btn btn-danger btn-card\">Delete</a>";
+                                        echo '</div>';
+                                    echo '</div>';
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
