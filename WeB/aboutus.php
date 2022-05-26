@@ -15,7 +15,7 @@
         <div class="text text-h">
             <p>CHF Local’s Mart serves the most essential items for our daily life. There are five shop types; they are butchers, greengrocer, fishmonger, bakery and delicatessen. We focus specifically on local products.
             our locally based skillful manpower have gained extensive experience in manufacturing local
-            products of premium quality.Meanwhile, entrepreneurs working on to supply with basic commodities
+            products of premium quality. Meanwhile, entrepreneurs working on to supply with basic commodities
             of higher quality easily benefit themselves on featuring their products with our easy business policy.
             As you make a purchase, we guarantee to deliver only Quality,organic,Natural products directly
             from farmer’s hands to your doorsteps. Whenever you visit our online grocery store, we assure you
@@ -25,7 +25,7 @@
             enjoy easiest shopping methods by simply logging into official website of chf local’s mart. we also
             offer easy payment system from digital platform like paypal and also have special discount offer.
             Regardless of what items you make a purchase of, we guarantee to deliver 100% genuine items to
-            your doorstep with our Express Delivery Service over different parts of uk..
+            your doorstep with our Express Delivery Service over different parts of uk.
             We focus on satisfaction and expediency with customers and traders for maintaining a peaceful
             relationship, which makes us one of the top online mart.</p>
         </div>
