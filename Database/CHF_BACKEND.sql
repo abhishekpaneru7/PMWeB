@@ -85,8 +85,8 @@ review_id number(30) primary key,
 review_comment varchar(500), 
 rating number(*,1) not null, 
 review_date date , 
-customer_id number(30) not null references customer (customer_id), 
-product_id number(30) not null references product (product_id) 
+product_id number(30) not null references product (product_id),
+customer_id number(30) not null references customer (customer_id)
 );
 
 

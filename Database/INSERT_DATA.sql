@@ -315,10 +315,10 @@ INSERT INTO ORDERPRODUCT (order_id, product_id, product_quantity ) VALUES (9,1,5
 INSERT INTO ORDERPRODUCT (order_id, product_id, product_quantity ) VALUES (10,1,2);
 
 --REVIEW
-INSERT INTO REVIEW (review_id , review_comment, rating , review_date,customer_id,product_id  ) VALUES (1,'Very high quality products. Totally satisfied',4,'03/12/2022',1,2);
-INSERT INTO REVIEW (review_id , review_comment, rating , review_date,customer_id,product_id  ) VALUES (2,'Extremely satisfied. Would re order again',5,'02/22/2022',5,3);
-INSERT INTO REVIEW (review_id , review_comment, rating , review_date,customer_id,product_id  ) VALUES (3,'The price was a expensive but the quality was good',3,'01/25/2022',10,13);
-INSERT INTO REVIEW (review_id , review_comment, rating , review_date,customer_id,product_id  ) VALUES (4,'Was expecting higher quality product but was not too bad',3,'04/1/2022',23,29);
+--INSERT INTO REVIEW (review_id , review_comment, rating , product_id, customer_id ) VALUES (1,'Very high quality products. Totally satisfied',4,2,1);
+--INSERT INTO REVIEW (review_id , review_comment, rating , product_id, customer_id) VALUES (2,'Extremely satisfied. Would re order again',5,3,5);
+--INSERT INTO REVIEW (review_id , review_comment, rating , product_id, customer_id) VALUES (3,'The price was a expensive but the quality was good',3,13,10);
+--INSERT INTO REVIEW (review_id , review_comment, rating , product_id, customer_id) VALUES (4,'Was expecting higher quality product but was not too bad',3,29,23);
 
 --PAYMENT
 INSERT INTO PAYMENT(payment_id, customer_id, product_id, order_id, paiddate) VALUES (1,1, 4, 1,'05/25/2022');
