@@ -9,7 +9,7 @@ DROP TABLE ORDERPRODUCT CASCADE CONSTRAINTS;
 DROP TABLE REVIEW CASCADE CONSTRAINTS; 
 DROP TABLE PAYMENT CASCADE CONSTRAINTS;
 
-Create table customer (
+CREATE TABLE CUSTOMER (
     customer_id number(5) primary key,
     first_name VARCHAR2(50) not null,
     last_name VARCHAR2(50) not null,
@@ -35,8 +35,6 @@ CREATE TABLE TRADER(
     status VARCHAR2(10) not null,
     shop_id NUMBER(10) REFERENCES SHOP(shop_id)
 );
-
-
 
 CREATE TABLE PRODUCT(
     product_id number(5) primary key,
@@ -70,7 +68,7 @@ CREATE TABLE COLLECTIONSLOT(
 CREATE TABLE ORDERDETAIL(
     order_id number (5) primary key,
     customer_id number(5) REFERENCES customer (customer_id),
-    product_id number (5) REFERENCES product (product_id),
+   --product_id number (5) REFERENCES product (product_id),
     status VARCHAR2(10) not null,
     slot_id number(10) REFERENCES collectionslot (slot_id)
 );
@@ -82,9 +80,9 @@ CREATE TABLE ORDERPRODUCT(
     primary key(order_id, product_id)    
 );
 
-create table review( 
+CREATE TABLE REVIEW( 
 review_id number(30) primary key, 
-comments varchar(100), 
+review_comment varchar(500), 
 rating number(*,1) not null, 
 review_date date , 
 customer_id number(30) not null references customer (customer_id), 
@@ -92,12 +90,11 @@ product_id number(30) not null references product (product_id)
 );
 
 
-
 CREATE TABLE PAYMENT(
     payment_id number(10) primary key,    
     customer_id number(10) references customer(Customer_id),
     product_id number (5) REFERENCES product (product_id),
     order_id number(10) references orderdetail (order_id),
-    paiddate timestamp(1)
+    paiddate date not null
 );
 
