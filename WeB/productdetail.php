@@ -87,7 +87,7 @@
                     while($row = oci_fetch_assoc($result)){
                         $name = $row['FIRST_NAME'] . " " . $row['LAST_NAME'];
                         $rating = $row['RATING'];
-                        $comment = $row['COMMENTs'];
+                        $comment = $row['COMMENTS'];
                         $date = $row['REVIEW_DATE'];
                         echo '<div class="rate-c-v">';
                         echo '<h4 style="display:inline; float:left;">' . $name . '</h4>';
