@@ -100,7 +100,11 @@
                         <br>
                         <hr>
                         <div class="text-center">
-                        <a href="#" class="btn btn-danger btn-card">Check OUT</a>
+                            <form action="./sandbox.php" method="post">
+                                <input type="number" name="total" value="<?php echo $grand; ?>" hidden>
+                                <input type="number" name="Cid" value="<?php echo $id; ?>" hidden>
+                                <button type="submit" class="btn btn-danger btn-card">Check Out</button>
+                            </form>
                         </div>
                     </div>
                 </div>

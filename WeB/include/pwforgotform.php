@@ -29,7 +29,7 @@ if(isset($_POST['btnsubmit'])){
         $subject ="Password change Email";
         // echo "<p>Your account : ".$email." recently requested for password reset.</p>";
         // <p>Please click the link below to reset your password.</p>     
-        $message ="<h2>Click <a href='http://localhost/pm/PMWeB/WeB/changePassword.php?email=$changeemail'>RESET YOUR PASSWORD</a> to change password </h2> ";
+        $message ="<h2>Click <a href='http://localhost/pm/PMWeB/WeB/changePassword.php?email=$emailsent'>RESET YOUR PASSWORD</a> to change password </h2> ";
         $headers = "From: CHFLOCALMART  <" . $sender . ">\n" ;
         $headers .= "MIME-Version: 1.0\n";
         $headers .= "Content-type: text/html; charset=utf-8\n";
