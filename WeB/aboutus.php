@@ -13,7 +13,21 @@
     <div id="OH" class="container rounded" style="border: 0.1px solid black; margin-top: 5%; height: auto; background-color: white;">
     <h1 class="text-center pb-4 text-u" style="margin-top: 9%;">Our History</h1>
         <div class="text text-h">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex esse quasi odio maxime quas nostrum debitis dicta possimus laudantium similique at explicabo nihil, sint doloribus expedita. Totam nam est quae aperiam esse ipsa asperiores molestias, architecto, autem laborum saepe? Ducimus deserunt repudiandae autem enim quaerat commodi error hic rerum, facere necessitatibus, vitae quo qui, a tempora laudantium? Tempora voluptatem assumenda vel explicabo, impedit veniam cupiditate consequuntur atque qui fugit consectetur numquam quam obcaecati facilis laboriosam facere ea voluptatibus dolorem animi? Temporibus exercitationem error eligendi? Sed illum ut nam totam, vitae doloremque deleniti. Nostrum quaerat possimus architecto, sunt, itaque est quidem eaque exercitationem aspernatur explicabo ut. Quo at nisi cupiditate neque vero fugiat porro eaque, culpa aliquid consequatur dolorum quisquam possimus. Cumque, quas voluptates ipsa ad eaque autem. Corrupti sed consectetur nostrum optio magni id maiores blanditiis quasi! Alias temporibus vel aliquam molestiae ab a odit voluptatem. Hic distinctio quisquam autem architecto dolorum, modi culpa provident alias. Voluptas aliquam eos similique ab, nostrum ipsum recusandae ut vero amet dignissimos architecto aperiam incidunt est sed esse rem, cumque, ipsa veniam cupiditate quisquam minus? Voluptatibus facilis repellendus iusto, cumque nobis modi possimus, rerum molestiae tempore eos atque alias culpa quo quaerat dignissimos, ratione debitis pariatur sunt corporis nam a nesciunt? Quia assumenda aperiam architecto, repellendus quod distinctio perspiciatis autem minima, quis fuga quae itaque, ut facere. Alias dicta illum tenetur numquam consectetur iste error molestiae excepturi deserunt. Temporibus ex molestiae itaque optio illum eum, qui beatae omnis eius consectetur officiis unde distinctio vel? Ratione magni eligendi molestias pariatur quod cumque autem! Rem iste cupiditate similique, quis odit esse consequatur distinctio. Placeat deleniti vero nulla omnis a sit repellendus, aspernatur ipsum, nobis error qui aut quae ipsam delectus? Recusandae nemo ab quo? Atque aliquid ullam ex totam impedit, asperiores exercitationem cupiditate adipisci maxime magnam.</p>
+            <p>CHF Local’s Mart serves the most essential items for our daily life. There are five shop types; they are butchers, greengrocer, fishmonger, bakery and delicatessen. We focus specifically on local products.
+            our locally based skillful manpower have gained extensive experience in manufacturing local
+            products of premium quality.Meanwhile, entrepreneurs working on to supply with basic commodities
+            of higher quality easily benefit themselves on featuring their products with our easy business policy.
+            As you make a purchase, we guarantee to deliver only Quality,organic,Natural products directly
+            from farmer’s hands to your doorsteps. Whenever you visit our online grocery store, we assure you
+            of best price guarantee on the products. Chf local’s mart is a revolutionary approach on how you
+            shop your groceries and other imperatives as it provides an Easy Shopping ambience with every
+            items categorized under different heads so that you can select your items without any difficulties and
+            enjoy easiest shopping methods by simply logging into official website of chf local’s mart. we also
+            offer easy payment system from digital platform like paypal and also have special discount offer.
+            Regardless of what items you make a purchase of, we guarantee to deliver 100% genuine items to
+            your doorstep with our Express Delivery Service over different parts of uk..
+            We focus on satisfaction and expediency with customers and traders for maintaining a peaceful
+            relationship, which makes us one of the top online mart.</p>
         </div>
     </div>
     <div id="MOT" class="container">
