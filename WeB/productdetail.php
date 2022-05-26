@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php 
+
       include "include/header.php";
 ?>
     <br>
@@ -66,12 +67,18 @@
             <br>
                 <?php
                     if(isset($_POST['reviewBtn'])){
+                        if (empty($_SESSION['users'])){
+                            echo"<script>alert(\"Please Login to your account to rate our products.\");";
+                      echo "window.location.href=\"./login.php\";";
+                  echo "</script>";
+                  }
+                  else{
                         $rating = $_POST['star'];
                         $comment = $_POST['ratecomment'];
-                        $query = "Insert into REVIEW(REVIEW_ID, COMMENTS, RATING, REVIEW_DATE, PRODUCT_ID, CUSTOMER_ID) values(null, '$comment', '$rating', CURRENT_DATE, $prodid, $id)";
+                        $query = "Insert into REVIEW(REVIEW_ID, COMMENTs, RATING, REVIEW_DATE, PRODUCT_ID, CUSTOMER_ID) values(null, '$comment', '$rating', CURRENT_DATE, $prodid, $id)";
                         $insert = oci_parse($connection, $query);
                         oci_execute($insert);
-                    }
+                    } 
                 ?>
                 <?php
                     $sql = "SELECT * FROM REVIEW r, CUSTOMER c where c.CUSTOMER_ID = r.CUSTOMER_ID and r.PRODUCT_ID = $prodid";
@@ -96,6 +103,7 @@
                         echo "<br><p>$comment</p>";
                         echo "</div>";
                     }
+                }
                 ?>
         </div>
     </div>
