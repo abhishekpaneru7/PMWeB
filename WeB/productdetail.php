@@ -68,7 +68,7 @@
                     if(isset($_POST['reviewBtn'])){
                         $rating = $_POST['star'];
                         $comment = $_POST['ratecomment'];
-                        $query = "insert into REVIEW(REVIEW_ID, REVIEW_COMMENT, RATING, PRODUCT_ID, CUSTOMER_ID) values(null, '$comment', '$rating', $prodid, $id)";
+                        $query = "Insert into REVIEW(REVIEW_ID, COMMENTS, RATING, REVIEW_DATE, PRODUCT_ID, CUSTOMER_ID) values(null, '$comment', '$rating', CURRENT_DATE, $prodid, $id)";
                         $insert = oci_parse($connection, $query);
                         oci_execute($insert);
                     }
@@ -80,18 +80,20 @@
                     while($row = oci_fetch_assoc($result)){
                         $name = $row['FIRST_NAME'] . " " . $row['LAST_NAME'];
                         $rating = $row['RATING'];
-                        $comment = $row['REVIEW_COMMENT'];
+                        $comment = $row['COMMENTS'];
+                        $date = $row['REVIEW_DATE'];
                         echo '<div class="rate-c-v">';
-                        echo '<h4>By: ' . $name . '</h4>';
+                        echo '<h4 style="display:inline; float:left;">' . $name . '</h4>';
+                        echo '<p style="color:grey; display:inline; float:right;">Posted date: ' . $date . '</p><br><br>';
                         for($i = 0; $i < 5; $i++){
                             if($rating > 0){
-                                echo '<span class="fa fa-star checked"></span>';
+                                echo '<span class="fa fa-star checked" style="float: left;"></span>';
                                 $rating--;
                             }elseif($rating == 0){
-                                echo '<span class="fa fa-star"></span>';
+                                echo '<span class="fa fa-star" style="float:left;"></span>';
                             }
                         }
-                        echo "<p>$comment</p>";
+                        echo "<br><p>$comment</p>";
                         echo "</div>";
                     }
                 ?>
