@@ -6,7 +6,7 @@
         <fieldset class="border rounded-3 p-3 mt-5">
             <legend class="float-none w-auto px-3"><h1>Password Reset</h1></legend>
             <div class="forms-content">
-                <h2>Please fill out the form below!</h2>
+                <h2>Please fill out the below!</h2>
                 <br>
                 <input type="email" name="email" class="forms-control text-center" placeholder="Please enter your registered email here!">
                 <!-- <input type="text" name="" class="forms-control text-center" placeholder="Whatever else is needed.. Here !!"> -->
@@ -23,9 +23,9 @@ if(isset($_POST['btnsubmit'])){
      $select = oci_parse($connection, $emailverify);
      oci_execute($select, OCI_NO_AUTO_COMMIT);
      $rows = oci_fetch_all($select, $res);
-     if ($rows > 0) {     
-        $sender= "chflocalmart@gmail.com";
-        $to=$emailsent;
+     if ($rows > 0) {  
+       $sender= "chflocalmart@gmail.com";
+        $to= $emailsent;
         $subject ="Password change Email";
         // echo "<p>Your account : ".$email." recently requested for password reset.</p>";
         // <p>Please click the link below to reset your password.</p>     
@@ -51,5 +51,5 @@ if(isset($_POST['btnsubmit'])){
     else{
         echo "<script>alert(\"Please enter your registered Email.\");";
     }
-    include 'footer.php';
+ 
 ?>

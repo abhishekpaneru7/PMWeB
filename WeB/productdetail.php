@@ -14,7 +14,9 @@
     <br>
     <div class="product-detail">
         <?php
+        if(isset($_SESSION['id'])){
             $id = $_SESSION['id'];
+}
             $prodid = $_GET['id'];
             $sql = "Select * from product where PRODUCT_ID = $prodid";
             $result = oci_parse($connection, $sql);
