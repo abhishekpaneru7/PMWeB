@@ -39,7 +39,7 @@
                                 echo '<td><img src="./products/' . $row['IMAGE'] . '" height="100px"</td>';
                                 echo '<td>' . $row['PRODUCT_TITLE'] . '</td>';
                                 echo '<td>' . $row['PRICE'] . '</td>';
-                                echo '<td>'. '<button class="pl-us">-</button>' . $row['QUANTITY'] . '<button class="pl-us">+</button>' .'</td>';
+                                echo '<td><input type="number" value="' . $row['QUANTITY'] .'" style="width:50px;"></td>';
                                 echo '<td>' . $row['TOTAL'] . '</td>';
                                 echo "<td><a href=\"./include/deletecartproduct.php?id=$pid\" class=\"btn btn-danger btn-card\"><i class=\"fas fa-trash\"></i></a></td>";
                                 echo '</tr>';
@@ -100,7 +100,11 @@
                         <br>
                         <hr>
                         <div class="text-center">
-                        <a href="#" class="btn btn-danger btn-card">Check OUT</a>
+                            <form action="./sandbox.php" method="post">
+                                <input type="number" name="total" value="<?php echo $grand; ?>" hidden>
+                                <input type="number" name="Cid" value="<?php echo $id; ?>" hidden>
+                                <button type="submit" class="btn btn-danger btn-card">Check Out</button>
+                            </form>
                         </div>
                     </div>
                 </div>

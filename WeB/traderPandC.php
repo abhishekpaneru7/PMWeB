@@ -20,7 +20,7 @@
                         <a href="traderPandC.php">All Products</a>
                         <br>
                         <br>
-                        <a href="http://localhost:8080/apex/f?p=103:LOGIN_DESKTOP:13502055973576:::::">Reports</a>
+                        <a href="http://localhost:8080/apex/f?p=105:LOGIN_DESKTOP:7453777403316:::::">Reports</a>
                         <br>
                         <br>
                         <a href="profiletraderform.php">Profile</a>
