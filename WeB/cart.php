@@ -113,7 +113,7 @@
         <br>
     </div>
     <div class="c-s-btn">
-        <a href="" class="btn btn-primary text-white btn-card btn-cs">Continue Shopping</a>
+        <a href="shop.php" class="btn btn-primary text-white btn-card btn-cs">Continue Shopping</a>
     </div>
     <?php } include "include/footer.php"; ?>
 </body>

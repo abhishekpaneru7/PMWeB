@@ -91,12 +91,12 @@
                         if(!empty($_POST['image'])){
                             $image = $_POST['image'];
                             $sql = "insert into product(product_id, product_title, category, description, price, stock_quantity, image, shop_id, rating) values(null, '$title', '$category', '$description', $price, $stock, '$image', $shopId, null)";
-                            // $query = oci_parse($connection, $sql);
-                            // oci_execute($query);
-                            // echo "<script>alert(\"Product added succesfully.\");";
-                            // echo "window.location.href=\"./traderCRUDproduct.php?title=$title\"";
-                            // echo "</script>";
-                            echo $sql;
+                            $query = oci_parse($connection, $sql);
+                            oci_execute($query);
+                            echo "<script>alert(\"Product added succesfully.\");";
+                            echo "window.location.href=\"./traderCRUDproduct.php?title=$title\"";
+                            echo "</script>";
+                            // echo $sql;
                         }else{
                             echo "<script>alert(\"Choose prod   uct image.\")</script>";
                         }
