@@ -2,7 +2,7 @@
     include "include/header.php";
     $id = $_SESSION['id'];
     // $sql = "Select * from trader t, product p where t.shop_id = p.shop_id and t.trader_id = $id";
-    $sql = "Select * from trader";
+    $sql = "Select * from trader where trader_id = $id";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
     while($row = oci_fetch_assoc($result)){

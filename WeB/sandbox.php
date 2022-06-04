@@ -1,5 +1,5 @@
 <?php
-    $id = $_POST['id'];         //customer id
+    $id = $_POST['Cid'];         //customer id
     $pay = $_POST['total'];         //total amount to be paid
 ?>
 <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="POST" id="buyCredits" name="buyCredits">

@@ -1,6 +1,7 @@
 <?php
     include "include/header.php";
-    $sql = "Select * from trader";
+    $id = $_SESSION['id'];
+    $sql = "Select * from trader where trader_id = $id";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
     while($row = oci_fetch_assoc($result)){
