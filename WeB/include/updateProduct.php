@@ -41,7 +41,7 @@
    $query = oci_parse($connection, $update);
    oci_execute($query);
    echo '<script>alert("Product updated successfully!");';
-   echo "window.location.href = \"../traderCrudproduct.php?id=$id\";";
+   echo "window.location.href = \"../traderPandC.php?id=$id\";";
    echo "</script>";
   }
  }

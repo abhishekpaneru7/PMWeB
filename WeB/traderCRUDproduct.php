@@ -2,6 +2,7 @@
     include "include/header.php";
     $title = $_GET['title'];
     $id = $_SESSION['id'];
+
     $sql = "Select * from trader where trader_id = $id";
     $result = oci_parse($connection, $sql);
     oci_execute($result);
@@ -52,7 +53,7 @@
                                     echo '<div class="card col-lg-4 py-2 m-2 mx-auto" style="width: 40rem;">';
                                     echo '<div class="card-body">';
                                     echo '<h5 class="card-title">Product Details</h5>';
-                                    echo '<form action="./include/traderPandC.php" method="post">';
+                                    echo '<form action="./include/updateProduct.php" method="post">';
                                     echo '<div class="form-p">';
                                     echo '<input type="hidden" name="hideProdId" value ="' . $row['PRODUCT_ID'] . '"';
                                     echo '<label for="name" style="margin-right: 12px;">Product Name: </label>';
@@ -74,7 +75,6 @@
                                 }
                             ?>
                                     </form>
-                            </div>
                                 </div>
                             </div>
                         </div>
